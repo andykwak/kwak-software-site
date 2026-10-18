@@ -69,14 +69,14 @@ p { margin: 0; }
 header { border-bottom: 1px solid var(--line); }
 header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-block: 1rem; flex-wrap: wrap; }
 .brand { display: flex; align-items: center; gap: 0.6rem; text-decoration: none; color: var(--ink); font: 800 1.15rem/1 var(--display); }
-.brand img { display: block; height: 42px; width: auto; }
+.brand img { display: block; height: clamp(52px, 7vw, 72px); width: auto; }
 nav { display: flex; gap: 1.25rem; flex-wrap: wrap; }
-nav a { color: var(--muted); text-decoration: none; font-weight: 500; }
+nav a { color: var(--muted); text-decoration: none; font-weight: 500; font-size: 1.05rem; }
 nav a:hover { color: var(--ink); }
 
 /* Hero */
 .hero .wrap { padding-block: clamp(3rem, 8vw, 6rem) clamp(2.5rem, 6vw, 4.5rem); display: grid; gap: 1.5rem; }
-.hero h1 { font-size: clamp(2.4rem, 6.5vw, 4.6rem); font-weight: 800; line-height: 1.02; letter-spacing: -0.025em; max-width: 16ch; }
+.hero h1 { font-size: clamp(2.2rem, 5.5vw, 3.9rem); font-weight: 800; line-height: 1.02; letter-spacing: -0.025em; max-width: 16ch; }
 .hero h1 em { font-style: normal; color: var(--red); }
 .hero p { font-size: 1.15rem; color: var(--muted); max-width: 52ch; }
 .hero .actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
@@ -164,7 +164,7 @@ footer .wrap { padding-block: 2rem; display: flex; justify-content: space-betwee
     <a class="brand" href="#top" aria-label="Kwak Software home">
       <picture>
         <source srcset="assets/kwak-logo-white.svg" media="(prefers-color-scheme: dark)">
-        <img src="assets/kwak-logo.svg" alt="Kwak Software" width="118" height="42">
+        <img src="assets/kwak-logo.svg" alt="Kwak Software" width="202" height="72">
       </picture>
     </a>
     <nav aria-label="Main">
