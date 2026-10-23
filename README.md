@@ -6,7 +6,7 @@ No build step: edit the HTML and push.
 ## Contact form
 
 The form posts to FormSubmit (https://formsubmit.co), which emails each message to
-kwaksoftwareca@gmail.com. The very first message sends a one-time "confirm your email"
+support@kwaksoftware.ca. The very first message sends a one-time "confirm your email"
 link to that inbox; click it and every message after that is delivered.
 
 ## Hosting on GitHub Pages (free)
