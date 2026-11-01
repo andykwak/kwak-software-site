@@ -1,6 +1,7 @@
 # Kwak Software website
 
-A single static page (`index.html`) with the apps, a contact form and the privacy policy.
+A static page (`index.html`, French in `fr/`) with the apps and a contact form, plus the privacy
+policy at `privacy/` (French at `fr/confidentialite/`).
 No build step: edit the HTML and push.
 
 ## Contact form
@@ -24,4 +25,6 @@ link to that inbox; click it and every message after that is delivered.
    185.199.110.153 and 185.199.111.153, and a `CNAME` for `www` pointing to `<user>.github.io`.
 4. Once the certificate is issued, tick **Enforce HTTPS**.
 
-The privacy section is at `/#privacy`; use that URL for the Microsoft Store's privacy policy field.
+The privacy policy is at https://kwaksoftware.ca/privacy/ (French: /fr/confidentialite/); apps and the
+Microsoft Store's privacy policy field link there. Keep both languages and the home pages' short
+privacy summary in sync with what the apps actually do.

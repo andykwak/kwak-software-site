@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Privacy policy · Kwak Software</title>
+<meta name="description" content="How Kwak Software and its apps handle personal information.">
+<link rel="canonical" href="https://kwaksoftware.ca/privacy/">
+<link rel="alternate" hreflang="en" href="https://kwaksoftware.ca/privacy/">
+<link rel="alternate" hreflang="fr" href="https://kwaksoftware.ca/fr/confidentialite/">
+<link rel="alternate" hreflang="x-default" href="https://kwaksoftware.ca/privacy/">
+<link rel="icon" href="../favicon.ico" sizes="48x48">
+<link rel="icon" href="../assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<meta name="theme-color" content="#d52b1e">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@600;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Same tokens and header as the home page; one readable column for the policy. */
+:root {
+  --paper: #f6f5f3; --sheet: #ffffff; --ink: #1d1b1a; --muted: #625d58; --line: #dedbd6; --red: #c4261a;
+  --display: "Public Sans", "Segoe UI", system-ui, sans-serif;
+  --body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #141312; --sheet: #1c1a19; --ink: #ecebe8; --muted: #a49e98; --line: #302c2a; --red: #ff7a6e;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #141312; --sheet: #1c1a19; --ink: #ecebe8; --muted: #a49e98; --line: #302c2a; --red: #ff7a6e;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 400 1rem/1.6 var(--body); }
+a { color: var(--red); }
+a:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+.wrap {
+  max-width: 68rem; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+h1, h2 { font-family: var(--display); text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(2rem, 4.5vw, 3rem); font-weight: 800; line-height: 1.05; letter-spacing: -0.02em; }
+h2 { font-size: 1.35rem; font-weight: 600; margin-top: 1.25rem; }
+p { margin: 0; }
+.label { font: 500 0.75rem/1 var(--mono); text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+header { border-bottom: 1px solid var(--line); }
+header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-block: 1rem; flex-wrap: wrap; }
+.brand { display: flex; text-decoration: none; }
+.brand img { display: block; height: clamp(52px, 7vw, 72px); width: auto; }
+nav { display: flex; gap: 1.25rem; flex-wrap: wrap; }
+nav a { color: var(--muted); text-decoration: none; font-weight: 500; font-size: 1.05rem; }
+nav a:hover { color: var(--ink); }
+.policy { padding-block: clamp(2.5rem, 6vw, 4rem); display: grid; gap: 1rem; }
+.policy > * { max-width: 68ch; }
+.policy p, .policy li { color: var(--muted); }
+.policy ul { margin: 0; padding-left: 1.1rem; display: grid; gap: 0.4rem; }
+.policy strong { color: var(--ink); font-weight: 600; }
+.summary { background: var(--sheet); border: 1px solid var(--line); border-radius: 10px; padding: 1.25rem 1.5rem; display: grid; gap: 0.6rem; }
+footer .wrap { padding-block: 2rem; display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; color: var(--muted); font-size: 0.9rem; border-top: 1px solid var(--line); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="../" aria-label="Kwak Software home">
+      <picture>
+        <source srcset="../assets/kwak-logo-white.svg" media="(prefers-color-scheme: dark)">
+        <img src="../assets/kwak-logo.svg" alt="Kwak Software" width="202" height="72">
+      </picture>
+    </a>
+    <nav aria-label="Main">
+      <a href="../#apps">Apps</a>
+      <a href="../#about">About</a>
+      <a href="../#contact">Contact</a>
+      <a href="../fr/confidentialite/" lang="fr" hreflang="fr">Français</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap policy">
+  <span class="label">Privacy</span>
+  <h1>Privacy policy</h1>
+  <p>Effective November 1, 2026.</p>
+
+  <div class="summary">
+    <p><strong>The short version.</strong></p>
+    <ul>
+      <li>Kwak Software apps run on your computer. They don't collect analytics, don't show ads and don't need an account.</li>
+      <li>ReKarver doesn't connect to the internet at all. Your drives and photos never leave your computer.</li>
+      <li>We only get personal information when you choose to send it to us, for example by email or the contact form, and we use it only to reply to you.</li>
+      <li>We don't sell or rent personal information, and we don't share it for advertising.</li>
+    </ul>
+  </div>
+
+  <h2>Who we are</h2>
+  <p>Kwak Software is a sole proprietorship run by Andy Kwak in Ottawa, Ontario, Canada. In this policy, "we" and "us" mean Kwak Software. This policy covers our apps and this website (kwaksoftware.ca). Andy is responsible for how personal information is handled and can be reached at <a href="mailto:support@kwaksoftware.ca">support@kwaksoftware.ca</a>.</p>
+
+  <h2>ReKarver</h2>
+  <p>ReKarver recovers photos from drives, memory cards and disk images. Everything it does happens on your computer.</p>
+  <ul>
+    <li><strong>No network access.</strong> ReKarver makes no internet connections. It has no analytics, crash reporting or update checks of its own, and no account.</li>
+    <li><strong>Your drives and photos.</strong> ReKarver reads the drive or image you choose. It doesn't change it. Photos it recovers are saved only to the folder you choose.</li>
+    <li><strong>Settings.</strong> ReKarver keeps your language choice in a small settings file in your Windows user folder. It stays on your computer.</li>
+    <li><strong>Diagnostics.</strong> If you click "Copy diagnostics" in Settings, ReKarver copies details about your computer and what the app did (not the names of the photos it found) to your clipboard. Nothing is sent. If you paste it into an email to us, we use it only to help with your problem.</li>
+  </ul>
+
+  <h2>Buying and installing through the Microsoft Store</h2>
+  <p>Our apps are sold through the Microsoft Store. Microsoft handles the purchase, payment and download under the <a href="https://privacy.microsoft.com/privacystatement">Microsoft Privacy Statement</a>. We never see your payment details. Microsoft gives us reports such as sales counts by country, ratings and reviews you post publicly in the Store, and, depending on your Windows diagnostic settings, crash reports. We use these only to support and improve our apps.</p>
+
+  <h2>This website</h2>
+  <ul>
+    <li><strong>No cookies or tracking.</strong> This site doesn't use cookies, analytics or advertising.</li>
+    <li><strong>Hosting.</strong> The site is hosted on GitHub Pages. Like any web server, GitHub receives your IP address and browser details when you visit, and may log them for security. See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</li>
+    <li><strong>Fonts.</strong> The site loads its fonts from Google Fonts, so your browser sends your IP address to Google when the page loads. See the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
+    <li><strong>Contact form.</strong> When you use the contact form, the name, email address, topic and message you enter are sent through FormSubmit (formsubmit.co), which delivers them to our inbox.</li>
+  </ul>
+
+  <h2>When you contact us</h2>
+  <p>If you email us or use the contact form, we receive your name, email address and whatever you include in your message. We use it only to reply to you and to help with your question. We keep messages for as long as we need them to help you and to keep ordinary business records, and we delete them when you ask, unless the law requires us to keep them.</p>
+
+  <h2>Sharing</h2>
+  <p>We don't sell, rent or trade personal information. We share it only with the service providers named above, which handle it on our behalf (for example to deliver email), or when the law requires it.</p>
+
+  <h2>Where information is stored</h2>
+  <p>Some of the service providers named in this policy, including Microsoft, GitHub, Google and FormSubmit, may store or process information outside Canada, for example in the United States. Information held there may be accessed by courts, law enforcement and national security authorities of that country under its laws.</p>
+
+  <h2>Your rights</h2>
+  <p>You can ask to see the personal information we hold about you, to correct it, or to have it deleted, and you can withdraw your consent at any time. Write to <a href="mailto:support@kwaksoftware.ca">support@kwaksoftware.ca</a> and we'll reply within 30 days. If you're not satisfied with our answer, you can contact the <a href="https://www.priv.gc.ca/">Office of the Privacy Commissioner of Canada</a>.</p>
+
+  <h2>Children</h2>
+  <p>Our apps and website are not directed at children under 13, and we don't knowingly collect personal information from them. If you believe a child has sent us personal information, contact us and we'll delete it.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If we change how we handle personal information, we'll update this page and the effective date above. If an app starts collecting something new, we'll say so here before that version is released.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about privacy? Email <a href="mailto:support@kwaksoftware.ca">support@kwaksoftware.ca</a> or use the <a href="../#contact">contact form</a>.</p>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Kwak Software</span>
+    <span>Made in Ottawa</span>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
