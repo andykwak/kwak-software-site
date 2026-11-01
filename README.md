@@ -4,6 +4,11 @@ A static page (`index.html`, French in `fr/`) with the apps and a contact form, 
 policy at `privacy/` (French at `fr/confidentialite/`).
 No build step: edit the HTML and push.
 
+## Fonts
+
+Public Sans and IBM Plex are served from `assets/fonts/` (latin and latin-ext subsets, SIL OFL),
+not Google Fonts, so visitors' browsers never contact Google. The privacy policy says so; keep it that way.
+
 ## Contact form
 
 The form posts to FormSubmit (https://formsubmit.co), which emails each message to
