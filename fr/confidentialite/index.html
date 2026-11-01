@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Politique de confidentialité · Kwak Software</title>
+<meta name="description" content="Comment Kwak Software et ses applications traitent les renseignements personnels.">
+<link rel="canonical" href="https://kwaksoftware.ca/fr/confidentialite/">
+<link rel="alternate" hreflang="en" href="https://kwaksoftware.ca/privacy/">
+<link rel="alternate" hreflang="fr" href="https://kwaksoftware.ca/fr/confidentialite/">
+<link rel="alternate" hreflang="x-default" href="https://kwaksoftware.ca/privacy/">
+<link rel="icon" href="../../favicon.ico" sizes="48x48">
+<link rel="icon" href="../../assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+<meta name="theme-color" content="#d52b1e">
+<link rel="stylesheet" href="../../assets/fonts/fonts.css">
+<style>
+/* Same tokens and header as the home page; one readable column for the policy. */
+:root {
+  --paper: #f6f5f3; --sheet: #ffffff; --ink: #1d1b1a; --muted: #625d58; --line: #dedbd6; --red: #c4261a;
+  --display: "Public Sans", "Segoe UI", system-ui, sans-serif;
+  --body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #141312; --sheet: #1c1a19; --ink: #ecebe8; --muted: #a49e98; --line: #302c2a; --red: #ff7a6e;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #141312; --sheet: #1c1a19; --ink: #ecebe8; --muted: #a49e98; --line: #302c2a; --red: #ff7a6e;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 400 1rem/1.6 var(--body); }
+a { color: var(--red); }
+a:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+.wrap {
+  max-width: 68rem; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+h1, h2 { font-family: var(--display); text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(2rem, 4.5vw, 3rem); font-weight: 800; line-height: 1.05; letter-spacing: -0.02em; }
+h2 { font-size: 1.35rem; font-weight: 600; margin-top: 1.25rem; }
+p { margin: 0; }
+.label { font: 500 0.75rem/1 var(--mono); text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+header { border-bottom: 1px solid var(--line); }
+header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-block: 1rem; flex-wrap: wrap; }
+.brand { display: flex; text-decoration: none; }
+.brand img { display: block; height: clamp(52px, 7vw, 72px); width: auto; }
+nav { display: flex; gap: 1.25rem; flex-wrap: wrap; }
+nav a { color: var(--muted); text-decoration: none; font-weight: 500; font-size: 1.05rem; }
+nav a:hover { color: var(--ink); }
+.policy { padding-block: clamp(2.5rem, 6vw, 4rem); display: grid; gap: 1rem; }
+.policy > * { max-width: 68ch; }
+.policy p, .policy li { color: var(--muted); }
+.policy ul { margin: 0; padding-left: 1.1rem; display: grid; gap: 0.4rem; }
+.policy strong { color: var(--ink); font-weight: 600; }
+.summary { background: var(--sheet); border: 1px solid var(--line); border-radius: 10px; padding: 1.25rem 1.5rem; display: grid; gap: 0.6rem; }
+footer .wrap { padding-block: 2rem; display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; color: var(--muted); font-size: 0.9rem; border-top: 1px solid var(--line); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="../" aria-label="Accueil Kwak Software">
+      <picture>
+        <source srcset="../../assets/kwak-logo-white.svg" media="(prefers-color-scheme: dark)">
+        <img src="../../assets/kwak-logo.svg" alt="Kwak Software" width="202" height="72">
+      </picture>
+    </a>
+    <nav aria-label="Menu principal">
+      <a href="../#apps">Applications</a>
+      <a href="../#about">À propos</a>
+      <a href="../#contact">Contact</a>
+      <a href="../../privacy/" lang="en" hreflang="en">English</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap policy">
+  <span class="label">Confidentialité</span>
+  <h1>Politique de confidentialité</h1>
+  <p>En vigueur le 1<sup>er</sup> novembre 2026.</p>
+
+  <div class="summary">
+    <p><strong>En bref.</strong></p>
+    <ul>
+      <li>Les applications de Kwak Software fonctionnent sur votre ordinateur. Elles ne recueillent aucune donnée d'analyse, n'affichent pas de publicité et ne demandent pas de compte.</li>
+      <li>ReKarver et Pecan ne se connectent jamais à Internet. Vos disques et vos photos ne quittent jamais votre ordinateur.</li>
+      <li>Nous obtenons des renseignements personnels seulement lorsque vous choisissez de nous les envoyer, par exemple par courriel ou au moyen du formulaire de contact, et nous les utilisons uniquement pour vous répondre.</li>
+      <li>Nous ne vendons ni ne louons de renseignements personnels, et nous ne les communiquons pas à des fins publicitaires.</li>
+    </ul>
+  </div>
+
+  <h2>Qui nous sommes</h2>
+  <p>Kwak Software est une entreprise individuelle établie à Ottawa (Ontario), au Canada. Dans la présente politique, « nous » désigne Kwak Software. Elle s'applique à nos applications et à ce site Web (kwaksoftware.ca). Le propriétaire de Kwak Software est responsable du traitement des renseignements personnels et peut être joint à <a href="mailto:support@kwaksoftware.ca">support@kwaksoftware.ca</a>.</p>
+
+  <h2>ReKarver</h2>
+  <p>ReKarver récupère des photos sur des disques, des cartes mémoire et des images disque. Tout se passe sur votre ordinateur.</p>
+  <ul>
+    <li><strong>Aucun accès réseau.</strong> ReKarver n'établit aucune connexion Internet. Il n'a pas de fonctions d'analyse, de rapports de plantage ni de vérification des mises à jour qui lui soient propres, et ne demande pas de compte.</li>
+    <li><strong>Vos disques et vos photos.</strong> ReKarver lit le disque ou l'image que vous choisissez, sans le modifier. Les photos récupérées sont enregistrées uniquement dans le dossier de votre choix.</li>
+    <li><strong>Paramètres.</strong> ReKarver conserve votre choix de langue dans un petit fichier de paramètres dans votre dossier d'utilisateur Windows. Il reste sur votre ordinateur.</li>
+    <li><strong>Diagnostic.</strong> Si vous cliquez sur « Copier le diagnostic » dans les paramètres, ReKarver copie dans le presse-papiers des détails sur votre ordinateur et sur ce que l'application a fait (sans les noms des photos trouvées). Rien n'est envoyé. Si vous le collez dans un courriel à notre intention, nous l'utilisons uniquement pour régler votre problème.</li>
+  </ul>
+
+  <h2>Pecan</h2>
+  <p>Pecan organise les photos et les vidéos de votre ordinateur. Tout se passe sur votre ordinateur.</p>
+  <ul>
+    <li><strong>Aucun accès réseau.</strong> Pecan n'établit aucune connexion Internet. Il n'a pas de fonctions d'analyse, de rapports de plantage ni de vérification des mises à jour qui lui soient propres, et ne demande pas de compte. Il ouvre notre site Web ou votre application de courriel seulement si vous cliquez sur ces liens dans « À propos » ou dans les paramètres.</li>
+    <li><strong>Votre photothèque.</strong> Pecan lit les dossiers que vous choisissez. Il conserve sa photothèque (noms et emplacements des fichiers, dates, détails de l'appareil photo, données de localisation enregistrées dans vos photos, albums, favoris et retouches) et ses vignettes dans un dossier de votre dossier d'utilisateur Windows. Elles restent sur votre ordinateur, et la suppression de ce dossier les efface.</li>
+    <li><strong>Vos fichiers.</strong> Pecan ne déplace ni ne renomme vos photos. Il modifie un fichier seulement si vous le lui demandez : si vous activez l'enregistrement des rotations dans les fichiers JPEG, ou si vous envoyez des doublons à la corbeille.</li>
+    <li><strong>Exportation.</strong> Lorsque vous exportez des photos, vous pouvez choisir de retirer des copies la localisation et les renseignements personnels.</li>
+    <li><strong>Rapports de plantage.</strong> Si Pecan plante, il écrit un rapport en texte brut dans un dossier de journaux sur votre ordinateur. Il n'est jamais envoyé. Si vous choisissez de nous l'envoyer par courriel, nous l'utilisons uniquement pour régler le problème.</li>
+  </ul>
+
+  <h2>Achat et installation par le Microsoft Store</h2>
+  <p>Nos applications sont vendues dans le Microsoft Store. Microsoft s'occupe de l'achat, du paiement et du téléchargement selon la <a href="https://privacy.microsoft.com/fr-ca/privacystatement">Déclaration de confidentialité de Microsoft</a>. Nous ne voyons jamais vos renseignements de paiement. Microsoft nous fournit des rapports comme le nombre de ventes par pays, les notes et les commentaires que vous publiez dans le Store et, selon vos paramètres de diagnostic Windows, des rapports de plantage. Nous les utilisons uniquement pour soutenir et améliorer nos applications.</p>
+
+  <h2>Ce site Web</h2>
+  <ul>
+    <li><strong>Aucun témoin ni suivi.</strong> Ce site n'utilise ni témoins (cookies), ni outils d'analyse, ni publicité.</li>
+    <li><strong>Hébergement.</strong> Le site est hébergé par GitHub Pages. Comme tout serveur Web, GitHub reçoit votre adresse IP et des détails sur votre navigateur lorsque vous visitez le site, et peut les consigner pour des raisons de sécurité. Consultez la <a href="https://docs.github.com/fr/site-policy/privacy-policies/github-general-privacy-statement">Déclaration de confidentialité de GitHub</a>.</li>
+    <li><strong>Formulaire de contact.</strong> Lorsque vous utilisez le formulaire de contact, le nom, l'adresse courriel, le sujet et le message que vous entrez sont transmis par FormSubmit (formsubmit.co), qui les achemine à notre boîte de réception.</li>
+  </ul>
+
+  <h2>Lorsque vous nous écrivez</h2>
+  <p>Si vous nous écrivez par courriel ou au moyen du formulaire de contact, nous recevons votre nom, votre adresse courriel et tout ce que contient votre message. Nous les utilisons uniquement pour vous répondre et vous aider. Nous conservons les messages aussi longtemps que nécessaire pour vous aider et tenir nos dossiers d'entreprise courants, et nous les supprimons à votre demande, sauf si la loi nous oblige à les conserver.</p>
+
+  <h2>Communication à des tiers</h2>
+  <p>Nous ne vendons, ne louons ni n'échangeons de renseignements personnels. Nous les communiquons uniquement aux fournisseurs de services nommés ci-dessus, qui les traitent pour notre compte (par exemple pour acheminer les courriels), ou lorsque la loi l'exige.</p>
+
+  <h2>Lieu de conservation</h2>
+  <p>Certains fournisseurs de services nommés dans la présente politique, dont Microsoft, GitHub et FormSubmit, peuvent conserver ou traiter des renseignements à l'extérieur du Canada, par exemple aux États-Unis. Les renseignements qui s'y trouvent peuvent être consultés par les tribunaux, les organismes d'application de la loi et les autorités chargées de la sécurité nationale de ce pays, conformément à ses lois.</p>
+
+  <h2>Vos droits</h2>
+  <p>Vous pouvez demander à consulter les renseignements personnels que nous détenons à votre sujet, à les faire corriger ou à les faire supprimer, et vous pouvez retirer votre consentement en tout temps. Écrivez à <a href="mailto:support@kwaksoftware.ca">support@kwaksoftware.ca</a> et nous vous répondrons dans un délai de 30 jours. Si notre réponse ne vous satisfait pas, vous pouvez communiquer avec le <a href="https://www.priv.gc.ca/fr/">Commissariat à la protection de la vie privée du Canada</a>.</p>
+
+  <h2>Enfants</h2>
+  <p>Nos applications et notre site Web ne s'adressent pas aux enfants de moins de 13 ans, et nous ne recueillons pas sciemment de renseignements personnels à leur sujet. Si vous croyez qu'un enfant nous a envoyé des renseignements personnels, écrivez-nous et nous les supprimerons.</p>
+
+  <h2>Modifications</h2>
+  <p>Si nous modifions la façon dont nous traitons les renseignements personnels, nous mettrons cette page à jour, ainsi que la date d'entrée en vigueur ci-dessus. Si une application commence à recueillir de nouveaux renseignements, nous l'indiquerons ici avant la sortie de cette version.</p>
+
+  <h2>Nous joindre</h2>
+  <p>Des questions sur la confidentialité? Écrivez à <a href="mailto:support@kwaksoftware.ca">support@kwaksoftware.ca</a> ou utilisez le <a href="../#contact">formulaire de contact</a>.</p>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Kwak Software</span>
+    <span>Fait à Ottawa</span>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
