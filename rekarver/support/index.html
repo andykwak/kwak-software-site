@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ReKarver help and support · Kwak Software</title>
+<meta name="description" content="Get help with ReKarver: what to do first, common problems, questions and answers, and how to reach support.">
+<link rel="canonical" href="https://kwaksoftware.ca/rekarver/support/">
+<link rel="alternate" hreflang="en" href="https://kwaksoftware.ca/rekarver/support/">
+<link rel="alternate" hreflang="fr" href="https://kwaksoftware.ca/fr/rekarver/soutien/">
+<link rel="alternate" hreflang="x-default" href="https://kwaksoftware.ca/rekarver/support/">
+<link rel="icon" href="../../favicon.ico" sizes="48x48">
+<link rel="icon" href="../../assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+<meta name="theme-color" content="#d52b1e">
+<link rel="stylesheet" href="../../assets/fonts/fonts.css">
+<style>
+/* Same tokens and header as the privacy policy; one readable column, plus a table and folding questions. */
+:root {
+  --paper: #f6f5f3; --sheet: #ffffff; --ink: #1d1b1a; --muted: #625d58; --line: #dedbd6; --red: #c4261a;
+  --display: "Public Sans", "Segoe UI", system-ui, sans-serif;
+  --body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #141312; --sheet: #1c1a19; --ink: #ecebe8; --muted: #a49e98; --line: #302c2a; --red: #ff7a6e;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #141312; --sheet: #1c1a19; --ink: #ecebe8; --muted: #a49e98; --line: #302c2a; --red: #ff7a6e;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 400 1rem/1.6 var(--body); }
+a { color: var(--red); }
+a:focus-visible, summary:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+.wrap {
+  max-width: 68rem; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+h1, h2, h3 { font-family: var(--display); text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(2rem, 4.5vw, 3rem); font-weight: 800; line-height: 1.05; letter-spacing: -0.02em; }
+h2 { font-size: 1.35rem; font-weight: 600; margin-top: 1.25rem; }
+h3 { font-size: 1.05rem; font-weight: 600; margin-top: 0.5rem; }
+p { margin: 0; }
+kbd, code { font: 0.9em var(--mono); }
+.label { font: 500 0.75rem/1 var(--mono); text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+header { border-bottom: 1px solid var(--line); }
+header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-block: 1rem; flex-wrap: wrap; }
+.brand { display: flex; text-decoration: none; }
+.brand img { display: block; height: clamp(52px, 7vw, 72px); width: auto; }
+nav { display: flex; gap: 1.25rem; flex-wrap: wrap; }
+nav a { color: var(--muted); text-decoration: none; font-weight: 500; font-size: 1.05rem; }
+nav a:hover { color: var(--ink); }
+.page { padding-block: clamp(2.5rem, 6vw, 4rem); display: grid; gap: 1rem; }
+.page > * { max-width: 68ch; }
+.page p, .page li, .page td { color: var(--muted); }
+.page ul, .page ol { margin: 0; padding-left: 1.3rem; display: grid; gap: 0.4rem; }
+.page strong { color: var(--ink); font-weight: 600; }
+.summary { background: var(--sheet); border: 1px solid var(--line); border-radius: 10px; padding: 1.25rem 1.5rem; display: grid; gap: 0.6rem; }
+.table-wrap { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
+th, td { text-align: left; vertical-align: top; padding: 0.6rem 0.75rem; border-bottom: 1px solid var(--line); }
+th { font-family: var(--display); font-weight: 600; color: var(--ink); }
+td:first-child { color: var(--ink); font-weight: 500; width: 34%; }
+.faq { display: grid; gap: 0.5rem; }
+details { background: var(--sheet); border: 1px solid var(--line); border-radius: 10px; padding: 0.75rem 1rem; }
+summary { cursor: pointer; font-weight: 600; color: var(--ink); }
+details > :not(summary) { margin-top: 0.6rem; }
+footer .wrap { padding-block: 2rem; display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; color: var(--muted); font-size: 0.9rem; border-top: 1px solid var(--line); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="../../" aria-label="Kwak Software home">
+      <picture>
+        <source srcset="../../assets/kwak-logo-white.svg" media="(prefers-color-scheme: dark)">
+        <img src="../../assets/kwak-logo.svg" alt="Kwak Software" width="202" height="72">
+      </picture>
+    </a>
+    <nav aria-label="Main">
+      <a href="../">ReKarver</a>
+      <a href="../../#apps">Apps</a>
+      <a href="../../#contact">Contact</a>
+      <a href="../../fr/rekarver/soutien/" lang="fr" hreflang="fr">Français</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap page">
+  <span class="label">ReKarver</span>
+  <h1>Help and support</h1>
+
+  <div class="summary">
+    <p><strong>If your photos matter, stop using the drive now.</strong> Don't take new photos on the card, copy files to the drive or format it. Anything written to it can land on top of the photos you want back. Then scan it with ReKarver and save the photos to a different drive.</p>
+  </div>
+
+  <h2>Contact us</h2>
+  <p>Email <a href="mailto:support@kwaksoftware.ca">support@kwaksoftware.ca</a> or use the <a href="../../#contact">contact form</a>. In ReKarver, Help › Contact support (<kbd>F1</kbd>) starts an email with the version filled in. We answer within two business days, in English or French.</p>
+
+  <h3>What to include</h3>
+  <ol>
+    <li>What you were recovering from (SD card, USB stick, hard drive) and roughly how big it is.</li>
+    <li>What happened to the photos: deleted, card formatted, card won't open.</li>
+    <li>Which scan you ran and what you saw.</li>
+    <li><strong>Diagnostics.</strong> In ReKarver, choose Help › Copy diagnostics (<kbd>Ctrl+Shift+D</kbd>) and paste it into your email. It lists your Windows version, ReKarver's version, the drives it sees and its last few hundred steps. It doesn't include your photos or their names, and nothing is sent until you send the email yourself.</li>
+  </ol>
+
+  <h2>Common problems</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th scope="col">Problem</th><th scope="col">What to try</th></tr></thead>
+      <tbody>
+        <tr><td>My drive isn't in the list</td><td>Plug it in and press Refresh. Try another USB port or card reader. If Windows itself doesn't show it in Disk Management, ReKarver can't read it either.</td></tr>
+        <tr><td>A yellow notice says permission was not given</td><td>You chose No when Windows asked. Press Scan again and choose Yes. ReKarver only reads the drive.</td></tr>
+        <tr><td>The scan found nothing</td><td>After a quick scan, run Scan free space. On an SSD, or a drive encrypted with BitLocker, deleted photos usually can't be recovered.</td></tr>
+        <tr><td>The scan is slow</td><td>It goes as fast as the drive can be read. A card reader or USB 2 port can be several times slower than USB 3. You can stop at any time and keep what was found.</td></tr>
+        <tr><td>The scan ended early, or part of the drive couldn't be read</td><td>The drive may be failing. Save what was found first (select the photos and press Save selected, or File › Save Scan…) before trying again.</td></tr>
+        <tr><td>Saving asks "Which drive is …?"</td><td>The drive that was scanned wasn't found. Connect it, press Refresh, and choose it.</td></tr>
+        <tr><td>Some photos weren't saved because they no longer match</td><td>The drive changed after the scan (new files, or a format). Scan it again.</td></tr>
+        <tr><td>ReKarver closed with a message about a crash log</td><td>Email us the file it names (<code>crash.log</code>). It holds no photos.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Questions and answers</h2>
+  <div class="faq">
+    <details>
+      <summary>Can ReKarver damage my drive or make things worse?</summary>
+      <p>No. ReKarver only reads the drive; it never writes to it. It also keeps its working files and the photos you save off that drive. If it is the only drive in the computer, ReKarver warns you and asks before writing anything to it.</p>
+    </details>
+    <details>
+      <summary>What can it recover from?</summary>
+      <p>SD and microSD cards, USB sticks, external and internal hard drives, and disk image files (<code>.img</code>, <code>.dd</code>, <code>.raw</code>, <code>.001</code> and similar). It reads drives formatted FAT, FAT32, exFAT and NTFS best, with names and dates. Other drives, such as ones from a Mac or Linux computer, are still searched, but photos come back without their original names.</p>
+    </details>
+    <details>
+      <summary>Which kinds of files does it find?</summary>
+      <p>Photos: JPEG, PNG, GIF, WebP, HEIC, AVIF, BMP, TIFF and camera raw (DNG, Canon CR2 and CR3, Nikon NEF, Sony ARW, Pentax PEF). Videos: MP4, MOV and 3GP. It doesn't recover documents or music.</p>
+    </details>
+    <details>
+      <summary>Why does Windows ask for permission when I press Scan?</summary>
+      <p>Reading a drive directly needs administrator rights in Windows. ReKarver asks only at that moment, and only to read. Disk image files don't need it.</p>
+    </details>
+    <details>
+      <summary>Which scan should I use?</summary>
+      <p>Start with <strong>Quick scan</strong>. It finds deleted files the drive still lists, usually in seconds, often with their names. If what you want isn't there, or the drive was formatted, use <strong>Scan free space</strong>: it searches the empty part of the drive, where deleted files are. <strong>Scan whole drive</strong> reads everything and is the slowest.</p>
+    </details>
+    <details>
+      <summary>How long does a scan take?</summary>
+      <p>A quick scan takes seconds to a few minutes. Free-space and whole-drive scans go about as fast as the drive can be read: roughly 15 to 20 minutes for a 64 GB USB 3 stick, and much longer for a large hard drive or through a slow card reader.</p>
+    </details>
+    <details>
+      <summary>The card was formatted. Can I still get photos back?</summary>
+      <p>Usually, after a quick format, which is what cameras and Windows do by default. Use Scan free space or Scan whole drive. A full format writes zeros over the whole drive, and then nothing can be recovered.</p>
+    </details>
+    <details>
+      <summary>ReKarver found nothing. Why?</summary>
+      <ul>
+        <li>It is an SSD. Most SSDs erase deleted data on their own soon after a file is deleted.</li>
+        <li>The space was used again by new files.</li>
+        <li>The drive is encrypted with BitLocker. ReKarver can't search encrypted drives.</li>
+        <li>Only a quick scan was run. Try Scan free space.</li>
+      </ul>
+    </details>
+    <details>
+      <summary>Some photos are marked Partial, or are grey at the bottom. Why?</summary>
+      <p>Part of the file was overwritten or is missing. ReKarver saves what is left, and the missing part shows grey. That is usually as much of that photo as still exists.</p>
+    </details>
+    <details>
+      <summary>Why are some photos listed twice, or why do I see lots of tiny pictures?</summary>
+      <p>Drives often hold several copies of the same photo, and programs store small icons and thumbnails. In the View menu, "Show each picture once" and "Hide very small pictures" tidy the list.</p>
+    </details>
+    <details>
+      <summary>Can I stop now and save more photos later?</summary>
+      <p>Yes. File › Save Scan… keeps what the scan found in one <code>.rekarve</code> file. Open it later, or double-click it, and save more photos without scanning again. Keep the same drive connected and unchanged; photos that have changed on it since the scan won't be saved.</p>
+    </details>
+    <details>
+      <summary>Can ReKarver play recovered videos?</summary>
+      <p>No. It lists them with their first frame and saves them. Open them afterwards in any video player.</p>
+    </details>
+    <details>
+      <summary>Does ReKarver send my photos anywhere?</summary>
+      <p>No. ReKarver doesn't connect to the internet at all. There is no account, no ads and no analytics. See the <a href="../../privacy/">privacy policy</a>.</p>
+    </details>
+  </div>
+
+  <h2>Before you buy</h2>
+  <ul>
+    <li>Windows 10 version 2004 or later, or Windows 11, on a 64-bit (x64) PC.</li>
+    <li>Administrator permission to read a drive. Disk image files don't need it.</li>
+    <li>ReKarver can't recover data that has been overwritten, erased by an SSD, or encrypted with BitLocker.</li>
+    <li>ReKarver is sold through the Microsoft Store, so purchases and refunds go through Microsoft.</li>
+  </ul>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Kwak Software</span>
+    <span>Made in Ottawa</span>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

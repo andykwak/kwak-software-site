@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aide et soutien ReKarver · Kwak Software</title>
+<meta name="description" content="Obtenir de l’aide avec ReKarver : quoi faire d’abord, problèmes courants, questions et réponses, et comment joindre le soutien.">
+<link rel="canonical" href="https://kwaksoftware.ca/fr/rekarver/soutien/">
+<link rel="alternate" hreflang="en" href="https://kwaksoftware.ca/rekarver/support/">
+<link rel="alternate" hreflang="fr" href="https://kwaksoftware.ca/fr/rekarver/soutien/">
+<link rel="alternate" hreflang="x-default" href="https://kwaksoftware.ca/rekarver/support/">
+<link rel="icon" href="../../../favicon.ico" sizes="48x48">
+<link rel="icon" href="../../../assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../../assets/apple-touch-icon.png">
+<meta name="theme-color" content="#d52b1e">
+<link rel="stylesheet" href="../../../assets/fonts/fonts.css">
+<style>
+/* Same tokens and header as the privacy policy; one readable column, plus a table and folding questions. */
+:root {
+  --paper: #f6f5f3; --sheet: #ffffff; --ink: #1d1b1a; --muted: #625d58; --line: #dedbd6; --red: #c4261a;
+  --display: "Public Sans", "Segoe UI", system-ui, sans-serif;
+  --body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #141312; --sheet: #1c1a19; --ink: #ecebe8; --muted: #a49e98; --line: #302c2a; --red: #ff7a6e;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #141312; --sheet: #1c1a19; --ink: #ecebe8; --muted: #a49e98; --line: #302c2a; --red: #ff7a6e;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 400 1rem/1.6 var(--body); }
+a { color: var(--red); }
+a:focus-visible, summary:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+.wrap {
+  max-width: 68rem; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+h1, h2, h3 { font-family: var(--display); text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(2rem, 4.5vw, 3rem); font-weight: 800; line-height: 1.05; letter-spacing: -0.02em; }
+h2 { font-size: 1.35rem; font-weight: 600; margin-top: 1.25rem; }
+h3 { font-size: 1.05rem; font-weight: 600; margin-top: 0.5rem; }
+p { margin: 0; }
+kbd, code { font: 0.9em var(--mono); }
+.label { font: 500 0.75rem/1 var(--mono); text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+header { border-bottom: 1px solid var(--line); }
+header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-block: 1rem; flex-wrap: wrap; }
+.brand { display: flex; text-decoration: none; }
+.brand img { display: block; height: clamp(52px, 7vw, 72px); width: auto; }
+nav { display: flex; gap: 1.25rem; flex-wrap: wrap; }
+nav a { color: var(--muted); text-decoration: none; font-weight: 500; font-size: 1.05rem; }
+nav a:hover { color: var(--ink); }
+.page { padding-block: clamp(2.5rem, 6vw, 4rem); display: grid; gap: 1rem; }
+.page > * { max-width: 68ch; }
+.page p, .page li, .page td { color: var(--muted); }
+.page ul, .page ol { margin: 0; padding-left: 1.3rem; display: grid; gap: 0.4rem; }
+.page strong { color: var(--ink); font-weight: 600; }
+.summary { background: var(--sheet); border: 1px solid var(--line); border-radius: 10px; padding: 1.25rem 1.5rem; display: grid; gap: 0.6rem; }
+.table-wrap { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
+th, td { text-align: left; vertical-align: top; padding: 0.6rem 0.75rem; border-bottom: 1px solid var(--line); }
+th { font-family: var(--display); font-weight: 600; color: var(--ink); }
+td:first-child { color: var(--ink); font-weight: 500; width: 34%; }
+.faq { display: grid; gap: 0.5rem; }
+details { background: var(--sheet); border: 1px solid var(--line); border-radius: 10px; padding: 0.75rem 1rem; }
+summary { cursor: pointer; font-weight: 600; color: var(--ink); }
+details > :not(summary) { margin-top: 0.6rem; }
+footer .wrap { padding-block: 2rem; display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; color: var(--muted); font-size: 0.9rem; border-top: 1px solid var(--line); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="../../" aria-label="Accueil Kwak Software">
+      <picture>
+        <source srcset="../../../assets/kwak-logo-white.svg" media="(prefers-color-scheme: dark)">
+        <img src="../../../assets/kwak-logo.svg" alt="Kwak Software" width="202" height="72">
+      </picture>
+    </a>
+    <nav aria-label="Menu principal">
+      <a href="../">ReKarver</a>
+      <a href="../../#apps">Applications</a>
+      <a href="../../#contact">Contact</a>
+      <a href="../../../rekarver/support/" lang="en" hreflang="en">English</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap page">
+  <span class="label">ReKarver</span>
+  <h1>Aide et soutien</h1>
+
+  <div class="summary">
+    <p><strong>Si vos photos comptent, cessez d’utiliser le lecteur dès maintenant.</strong> Ne prenez pas de nouvelles photos sur la carte, ne copiez pas de fichiers sur le lecteur et ne le formatez pas. Tout ce qui y est écrit peut recouvrir les photos que vous voulez récupérer. Analysez-le ensuite avec ReKarver et enregistrez les photos sur un autre lecteur.</p>
+  </div>
+
+  <h2>Nous joindre</h2>
+  <p>Écrivez à <a href="mailto:support@kwaksoftware.ca">support@kwaksoftware.ca</a> ou utilisez le <a href="../../#contact">formulaire de contact</a>. Dans ReKarver, Aide&nbsp;› Contacter le soutien (<kbd>F1</kbd>) ouvre un courriel où la version est déjà indiquée. Nous répondons en deux jours ouvrables, en français ou en anglais.</p>
+
+  <h3>Quoi inclure</h3>
+  <ol>
+    <li>Ce que vous tentiez de récupérer (carte SD, clé USB, disque dur) et sa taille approximative.</li>
+    <li>Ce qui est arrivé aux photos&nbsp;: supprimées, carte formatée, carte qui ne s’ouvre plus.</li>
+    <li>L’analyse que vous avez lancée et ce que vous avez vu.</li>
+    <li><strong>Le diagnostic.</strong> Dans ReKarver, choisissez Aide&nbsp;› Copier le diagnostic (<kbd>Ctrl+Maj+D</kbd>) et collez-le dans votre courriel. Il indique votre version de Windows, celle de ReKarver, les lecteurs qu’il voit et ses quelques centaines de dernières étapes. Il ne contient ni vos photos ni leurs noms, et rien n’est envoyé tant que vous n’envoyez pas le courriel vous-même.</li>
+  </ol>
+
+  <h2>Problèmes courants</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th scope="col">Problème</th><th scope="col">Quoi essayer</th></tr></thead>
+      <tbody>
+        <tr><td>Mon lecteur n’est pas dans la liste</td><td>Branchez-le et appuyez sur Actualiser. Essayez un autre port USB ou un autre lecteur de cartes. Si Windows lui-même ne l’affiche pas dans la Gestion des disques, ReKarver ne peut pas le lire non plus.</td></tr>
+        <tr><td>Un avis jaune indique que l’autorisation n’a pas été donnée</td><td>Vous avez choisi Non quand Windows l’a demandé. Appuyez de nouveau sur Analyser et choisissez Oui. ReKarver ne fait que lire le lecteur.</td></tr>
+        <tr><td>L’analyse n’a rien trouvé</td><td>Après une analyse rapide, lancez Analyser l’espace libre. Sur un SSD, ou sur un lecteur chiffré avec BitLocker, les photos supprimées ne peuvent généralement pas être récupérées.</td></tr>
+        <tr><td>L’analyse est lente</td><td>Elle va aussi vite que le lecteur peut être lu. Un lecteur de cartes ou un port USB&nbsp;2 peut être plusieurs fois plus lent que l’USB&nbsp;3. Vous pouvez arrêter à tout moment et garder ce qui a été trouvé.</td></tr>
+        <tr><td>L’analyse s’est terminée tôt, ou une partie du lecteur n’a pas pu être lue</td><td>Le lecteur est peut-être en train de flancher. Enregistrez d’abord ce qui a été trouvé (sélectionnez les photos et appuyez sur Enregistrer la sélection, ou Fichier&nbsp;› Enregistrer l’analyse…) avant de réessayer.</td></tr>
+        <tr><td>À l’enregistrement, «&nbsp;Quel lecteur est…&nbsp;?&nbsp;»</td><td>Le lecteur analysé n’a pas été trouvé. Branchez-le, appuyez sur Actualiser et choisissez-le.</td></tr>
+        <tr><td>Des photos n’ont pas été enregistrées parce qu’elles ne correspondent plus</td><td>Le lecteur a changé depuis l’analyse (nouveaux fichiers, ou formatage). Analysez-le de nouveau.</td></tr>
+        <tr><td>ReKarver s’est fermé avec un message sur un journal de plantage</td><td>Envoyez-nous le fichier qu’il nomme (<code>crash.log</code>). Il ne contient aucune photo.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Questions et réponses</h2>
+  <div class="faq">
+    <details>
+      <summary>ReKarver peut-il endommager mon lecteur ou empirer les choses&nbsp;?</summary>
+      <p>Non. ReKarver ne fait que lire le lecteur&nbsp;; il n’y écrit jamais. Il garde aussi ses fichiers de travail et les photos que vous enregistrez hors de ce lecteur. Si c’est le seul lecteur de l’ordinateur, ReKarver vous avertit et vous demande avant d’y écrire quoi que ce soit.</p>
+    </details>
+    <details>
+      <summary>À partir de quoi peut-il récupérer&nbsp;?</summary>
+      <p>Cartes SD et microSD, clés USB, disques durs externes et internes, et fichiers d’image disque (<code>.img</code>, <code>.dd</code>, <code>.raw</code>, <code>.001</code> et semblables). Il lit le mieux les lecteurs formatés en FAT, FAT32, exFAT et NTFS, avec les noms et les dates. Les autres lecteurs, comme ceux d’un Mac ou d’un ordinateur Linux, sont tout de même fouillés, mais les photos reviennent sans leur nom d’origine.</p>
+    </details>
+    <details>
+      <summary>Quels types de fichiers trouve-t-il&nbsp;?</summary>
+      <p>Photos&nbsp;: JPEG, PNG, GIF, WebP, HEIC, AVIF, BMP, TIFF et formats bruts d’appareil photo (DNG, Canon CR2 et CR3, Nikon NEF, Sony ARW, Pentax PEF). Vidéos&nbsp;: MP4, MOV et 3GP. Il ne récupère pas les documents ni la musique.</p>
+    </details>
+    <details>
+      <summary>Pourquoi Windows demande-t-il une autorisation quand j’appuie sur Analyser&nbsp;?</summary>
+      <p>Lire un lecteur directement exige des droits d’administrateur dans Windows. ReKarver ne les demande qu’à ce moment-là, et seulement pour lire. Les fichiers d’image disque n’en ont pas besoin.</p>
+    </details>
+    <details>
+      <summary>Quelle analyse choisir&nbsp;?</summary>
+      <p>Commencez par l’<strong>analyse rapide</strong>. Elle trouve les fichiers supprimés que le lecteur liste encore, habituellement en quelques secondes, souvent avec leur nom. Si ce que vous cherchez n’y est pas, ou si le lecteur a été formaté, choisissez <strong>Analyser l’espace libre</strong>&nbsp;: elle fouille la partie vide du lecteur, là où se trouvent les fichiers supprimés. <strong>Analyser tout le lecteur</strong> lit tout et est la plus lente.</p>
+    </details>
+    <details>
+      <summary>Combien de temps dure une analyse&nbsp;?</summary>
+      <p>Une analyse rapide prend de quelques secondes à quelques minutes. Les analyses de l’espace libre et de tout le lecteur vont à peu près aussi vite que le lecteur peut être lu&nbsp;: environ 15 à 20&nbsp;minutes pour une clé USB&nbsp;3 de 64&nbsp;Go, et beaucoup plus pour un gros disque dur ou avec un lecteur de cartes lent.</p>
+    </details>
+    <details>
+      <summary>La carte a été formatée. Puis-je quand même récupérer des photos&nbsp;?</summary>
+      <p>Généralement oui, après un formatage rapide, ce que font par défaut les appareils photo et Windows. Choisissez Analyser l’espace libre ou Analyser tout le lecteur. Un formatage complet écrit des zéros sur tout le lecteur, et rien ne peut alors être récupéré.</p>
+    </details>
+    <details>
+      <summary>ReKarver n’a rien trouvé. Pourquoi&nbsp;?</summary>
+      <ul>
+        <li>C’est un SSD. La plupart des SSD effacent d’eux-mêmes les données supprimées peu après la suppression d’un fichier.</li>
+        <li>L’espace a été réutilisé par de nouveaux fichiers.</li>
+        <li>Le lecteur est chiffré avec BitLocker. ReKarver ne peut pas fouiller les lecteurs chiffrés.</li>
+        <li>Seule une analyse rapide a été lancée. Essayez Analyser l’espace libre.</li>
+      </ul>
+    </details>
+    <details>
+      <summary>Certaines photos sont marquées Partiel, ou sont grises dans le bas. Pourquoi&nbsp;?</summary>
+      <p>Une partie du fichier a été recouverte ou manque. ReKarver enregistre ce qui reste, et la partie manquante paraît grise. C’est habituellement tout ce qui existe encore de cette photo.</p>
+    </details>
+    <details>
+      <summary>Pourquoi certaines photos apparaissent-elles deux fois, ou pourquoi vois-je beaucoup de toutes petites images&nbsp;?</summary>
+      <p>Les lecteurs contiennent souvent plusieurs copies d’une même photo, et les logiciels y gardent de petites icônes et miniatures. Dans le menu Affichage, «&nbsp;Afficher chaque image une seule fois&nbsp;» et «&nbsp;Masquer les très petites images&nbsp;» allègent la liste.</p>
+    </details>
+    <details>
+      <summary>Puis-je arrêter maintenant et enregistrer d’autres photos plus tard&nbsp;?</summary>
+      <p>Oui. Fichier&nbsp;› Enregistrer l’analyse… garde ce que l’analyse a trouvé dans un seul fichier <code>.rekarve</code>. Ouvrez-le plus tard, ou double-cliquez dessus, pour enregistrer d’autres photos sans refaire l’analyse. Gardez le même lecteur branché et inchangé&nbsp;; les photos qui ont changé depuis l’analyse ne seront pas enregistrées.</p>
+    </details>
+    <details>
+      <summary>ReKarver peut-il lire les vidéos récupérées&nbsp;?</summary>
+      <p>Non. Il les affiche avec leur première image et les enregistre. Ouvrez-les ensuite dans n’importe quel lecteur vidéo.</p>
+    </details>
+    <details>
+      <summary>ReKarver envoie-t-il mes photos quelque part&nbsp;?</summary>
+      <p>Non. ReKarver ne se connecte pas du tout à Internet. Il n’y a ni compte, ni publicité, ni analytique. Consultez la <a href="../../confidentialite/">politique de confidentialité</a>.</p>
+    </details>
+  </div>
+
+  <h2>Avant d’acheter</h2>
+  <ul>
+    <li>Windows&nbsp;10 version 2004 ou plus récente, ou Windows&nbsp;11, sur un PC 64&nbsp;bits (x64).</li>
+    <li>Une autorisation d’administrateur pour lire un lecteur. Les fichiers d’image disque n’en ont pas besoin.</li>
+    <li>ReKarver ne peut pas récupérer des données qui ont été recouvertes, effacées par un SSD ou chiffrées avec BitLocker.</li>
+    <li>ReKarver est vendu par le Microsoft Store&nbsp;: les achats et les remboursements passent par Microsoft.</li>
+  </ul>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Kwak Software</span>
+    <span>Fait à Ottawa</span>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
