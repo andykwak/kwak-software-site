@@ -1,7 +1,8 @@
 # Kwak Software website
 
 A static page (`index.html`, French in `fr/`) with the apps and a contact form, plus the privacy
-policy at `privacy/` (French at `fr/confidentialite/`).
+policy at `privacy/` (French at `fr/confidentialite/`) and the ReKarver page at `rekarver/`
+(French at `fr/rekarver/`).
 No build step: edit the HTML and push.
 
 ## Fonts
@@ -33,3 +34,11 @@ link to that inbox; click it and every message after that is delivered.
 The privacy policy is at https://kwaksoftware.ca/privacy/ (French: /fr/confidentialite/); apps and the
 Microsoft Store's privacy policy field link there. Keep both languages and the home pages' short
 privacy summary in sync with what the apps actually do.
+
+## ReKarver page
+
+`rekarver/index.html` and `fr/rekarver/index.html`. When the Microsoft Store approves the app,
+put its Store address in the two buttons marked `store-link` and `store-link-2` on each page,
+change their text, and remove `aria-disabled="true"` (the comment above the first button says how).
+The screenshots in `assets/rekarver/` were taken from the app's headless window tests with
+made-up pictures, in English and French.

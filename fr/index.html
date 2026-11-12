@@ -111,6 +111,9 @@ section { padding-block: clamp(2.5rem, 6vw, 4rem); }
 .spec dd { margin: 0.2rem 0 0; font-family: var(--mono); font-size: 0.9rem; overflow-wrap: anywhere; }
 .spec dd.none { color: var(--red); font-weight: 500; }
 .store-note { font-size: 0.9rem; color: var(--muted); }
+.app h3 a { color: inherit; text-decoration: none; }
+.app h3 a:hover { color: var(--red); }
+.more { font-weight: 600; }
 @media (max-width: 760px) {
   .app { grid-template-columns: minmax(0, 1fr); }
   .spec { border-left: 0; border-top: 1px solid var(--line); }
@@ -171,6 +174,7 @@ footer .wrap { padding-block: 2rem; display: flex; justify-content: space-betwee
     </a>
     <nav aria-label="Menu principal">
       <a href="#apps">Applications</a>
+      <a href="rekarver/">ReKarver</a>
       <a href="#about">À propos</a>
       <a href="#contact">Contact</a>
       <a href="confidentialite/">Confidentialité</a>
@@ -196,24 +200,45 @@ footer .wrap { padding-block: 2rem; display: flex; justify-content: space-betwee
     <div class="wrap">
       <div class="section-head">
         <span class="label">Applications</span>
-        <h2>Pour commencer</h2>
-        <p>Vous voulez savoir quand elle sera disponible? <a href="#contact">Écrivez-nous.</a></p>
+        <h2>Bientôt disponibles</h2>
+        <p>Vous voulez savoir quand elles seront disponibles? <a href="#contact">Écrivez-nous.</a></p>
       </div>
 
       <div class="apps">
         <article class="app" id="rekarver">
           <div class="app-main">
-            <div class="app-top"><h3>ReKarver</h3><span class="pill soon">Bientôt dans le Microsoft Store</span></div>
+            <div class="app-top"><h3><a href="rekarver/">ReKarver</a></h3><span class="pill soon">Bientôt dans le Microsoft Store</span></div>
             <p class="lede">Récupère vos photos sur une carte mémoire, une clé USB ou un disque dur. L'application lit le disque sans jamais y écrire.</p>
             <ul>
               <li>Retrouve les photos supprimées ou celles d'une carte qui ne s'ouvre plus</li>
               <li>Vous laisse parcourir ce qu'elle a trouvé et garder seulement ce que vous voulez</li>
             </ul>
+            <p><a class="more" href="rekarver/">En savoir plus sur ReKarver →</a></p>
           </div>
           <div class="spec">
             <dl>
               <div><dt>Types de photos</dt><dd>JPEG · PNG · HEIC · WebP · RAW d'appareil photo et plus</dd></div>
               <div><dt>Fonctionne sous</dt><dd>Windows</dd></div>
+              <div><dt>Compte requis</dt><dd class="none">Non</dd></div>
+            </dl>
+          </div>
+        </article>
+
+        <article class="app" id="pecan">
+          <div class="app-main">
+            <div class="app-top"><h3>Pecan Photos</h3><span class="pill dev">Bientôt</span></div>
+            <p class="lede">Garde en ordre les photos et vidéos qui sont déjà sur votre ordinateur, sans les téléverser nulle part.</p>
+            <ul>
+              <li>Réunit les dossiers de votre choix dans une seule photothèque, à parcourir par date</li>
+              <li>Albums et favoris, et un moyen de faire le ménage dans les doublons</li>
+              <li>Exporte des copies sans la position ni les renseignements personnels</li>
+            </ul>
+          </div>
+          <div class="spec">
+            <dl>
+              <div><dt>Vos fichiers</dt><dd>Restent où ils sont; jamais déplacés ni renommés</dd></div>
+              <div><dt>Fonctionne sous</dt><dd>Windows</dd></div>
+              <div><dt>Internet requis</dt><dd class="none">Non</dd></div>
               <div><dt>Compte requis</dt><dd class="none">Non</dd></div>
             </dl>
           </div>
@@ -258,6 +283,7 @@ footer .wrap { padding-block: 2rem; display: flex; justify-content: space-betwee
             <select id="topic" name="topic">
               <option>Question générale</option>
               <option>ReKarver</option>
+              <option>Pecan Photos</option>
               <option>Travail à contrat</option>
               <option>Signaler un bogue</option>
             </select>
