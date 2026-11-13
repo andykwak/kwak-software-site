@@ -119,6 +119,19 @@ section { padding-block: clamp(2.5rem, 6vw, 4rem); }
 .platform p { color: var(--muted); font-size: 0.95rem; }
 @media (max-width: 760px) { .platforms { grid-template-columns: minmax(0, 1fr); } }
 
+/* Buying directly: the honor system. No key, no activation, nothing in the app checks. */
+.buy {
+  margin-top: 1.5rem; background: var(--paper); border: 1px solid var(--line); border-top: 3px solid var(--red);
+  border-radius: 10px; padding: 1.5rem; display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 1.25rem 2.5rem;
+}
+.buy > div { display: grid; gap: 0.75rem; align-content: start; min-width: 0; }
+.buy p, .buy li { color: var(--muted); font-size: 0.95rem; }
+.buy ul { margin: 0; padding-left: 1.1rem; display: grid; gap: 0.35rem; }
+.buy .price { font: 800 2.4rem/1 var(--display); color: var(--ink); letter-spacing: -0.02em; }
+.buy .price small { font: 500 0.9rem/1 var(--body); color: var(--muted); letter-spacing: 0; }
+.buy .fine { font-size: 0.85rem; }
+@media (max-width: 760px) { .buy { grid-template-columns: minmax(0, 1fr); } }
+
 .closing { display: grid; gap: 1rem; }
 .closing > * { max-width: 62ch; }
 .closing p { color: var(--muted); }
@@ -257,7 +270,7 @@ footer .wrap { padding-block: 2rem; display: flex; justify-content: space-betwee
       <div class="section-head">
         <span class="label">Get ReKarver</span>
         <h2>Where it runs</h2>
-        <p>Windows comes first, through the Microsoft Store. Versions for Mac and Linux are on the way.</p>
+        <p>Windows comes first, through the Microsoft Store, or you can buy ReKarver directly from us. Versions for Mac and Linux are on the way.</p>
       </div>
       <div class="platforms">
         <div class="platform">
@@ -268,11 +281,34 @@ footer .wrap { padding-block: 2rem; display: flex; justify-content: space-betwee
         </div>
         <div class="platform">
           <div class="top"><h3>macOS</h3><span class="pill later">In the works</span></div>
-          <p>A Mac version is being built. Want to hear when it's ready? <a href="../#contact">Send a note.</a></p>
+          <p>A Mac version is being built, and it will be sold directly from this page. Want to hear when it's ready? <a href="../#contact">Send a note.</a></p>
         </div>
         <div class="platform">
           <div class="top"><h3>Linux</h3><span class="pill later">In the works</span></div>
-          <p>A Linux version is being tested now. Want to hear when it's ready? <a href="../#contact">Send a note.</a></p>
+          <p>A Linux version is being tested now, and it will be sold directly from this page. Want to hear when it's ready? <a href="../#contact">Send a note.</a></p>
+        </div>
+      </div>
+      <div class="buy" id="buy">
+        <div>
+          <h3>Or buy it directly from us</h3>
+          <p>For Mac and Linux, or for Windows without the Store. You pay once and the download is yours.</p>
+          <ul>
+            <li>No subscription.</li>
+            <li>No license key, no activation and no internet check. ReKarver works completely offline, and the copy you bought keeps working.</li>
+            <li>Install it on your own computers, whichever ones you like.</li>
+            <li>One purchase covers Windows now, and Linux and Mac as each one is ready. Download again any time from the link in your receipt.</li>
+          </ul>
+          <p>ReKarver isn't locked, so this works on trust. If someone gave you a copy and it got your photos back, please buy one. It's what keeps ReKarver going.</p>
+        </div>
+        <div>
+          <!-- Price: placeholder until Andy sets it. Keep it the same as the Lemon Squeezy product and fr/rekarver/. -->
+          <p class="price" id="price">$29 <small>USD, once</small></p>
+          <!-- Lemon Squeezy checkout: once the product exists, set href to its checkout link
+               (https://<store>.lemonsqueezy.com/buy/<id>), change the text to "Buy ReKarver",
+               and remove aria-disabled. Same in fr/rekarver/. -->
+          <div><a class="btn primary" id="buy-link" href="#buy" aria-disabled="true">Buying directly: coming soon</a></div>
+          <p class="fine">Payment is handled by Lemon Squeezy, our reseller, which charges any sales tax and emails your receipt and download link. See the <a href="../privacy/">privacy policy</a>.</p>
+          <p class="fine">The Windows download isn't signed yet, so Windows may say "Windows protected your PC" the first time you open it. Choose More info, then Run anyway.</p>
         </div>
       </div>
     </div>
