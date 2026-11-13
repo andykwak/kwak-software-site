@@ -42,3 +42,13 @@ put its Store address in the two buttons marked `store-link` and `store-link-2` 
 change their text, and remove `aria-disabled="true"` (the comment above the first button says how).
 The screenshots in `assets/rekarver/` were taken from the app's headless window tests with
 made-up pictures, in English and French.
+
+### Buying directly (Lemon Squeezy)
+
+ReKarver is also sold directly, on the honor system: Lemon Squeezy is the reseller (merchant of
+record), and the app has no license key, activation or internet check. The box marked `buy` in the
+"Get ReKarver" section of each page holds the price (`id="price"`) and the checkout button
+(`id="buy-link"`). When the Lemon Squeezy product exists, put its checkout link in `buy-link` on both
+pages, change the text to "Buy ReKarver" ("Acheter ReKarver"), and remove `aria-disabled="true"`.
+Keep the price on both pages the same as the product's. The privacy policy's "Buying directly"
+section describes what Lemon Squeezy shares with us; keep it in sync.

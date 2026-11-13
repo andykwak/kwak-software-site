@@ -119,6 +119,19 @@ section { padding-block: clamp(2.5rem, 6vw, 4rem); }
 .platform p { color: var(--muted); font-size: 0.95rem; }
 @media (max-width: 760px) { .platforms { grid-template-columns: minmax(0, 1fr); } }
 
+/* Buying directly: the honor system. No key, no activation, nothing in the app checks. */
+.buy {
+  margin-top: 1.5rem; background: var(--paper); border: 1px solid var(--line); border-top: 3px solid var(--red);
+  border-radius: 10px; padding: 1.5rem; display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 1.25rem 2.5rem;
+}
+.buy > div { display: grid; gap: 0.75rem; align-content: start; min-width: 0; }
+.buy p, .buy li { color: var(--muted); font-size: 0.95rem; }
+.buy ul { margin: 0; padding-left: 1.1rem; display: grid; gap: 0.35rem; }
+.buy .price { font: 800 2.4rem/1 var(--display); color: var(--ink); letter-spacing: -0.02em; }
+.buy .price small { font: 500 0.9rem/1 var(--body); color: var(--muted); letter-spacing: 0; }
+.buy .fine { font-size: 0.85rem; }
+@media (max-width: 760px) { .buy { grid-template-columns: minmax(0, 1fr); } }
+
 .closing { display: grid; gap: 1rem; }
 .closing > * { max-width: 62ch; }
 .closing p { color: var(--muted); }
@@ -257,7 +270,7 @@ footer .wrap { padding-block: 2rem; display: flex; justify-content: space-betwee
       <div class="section-head">
         <span class="label">Obtenir ReKarver</span>
         <h2>Sur quels systèmes</h2>
-        <p>Windows d'abord, par le Microsoft Store. Des versions pour Mac et Linux sont en route.</p>
+        <p>Windows d'abord, par le Microsoft Store, ou achetez ReKarver directement chez nous. Des versions pour Mac et Linux sont en route.</p>
       </div>
       <div class="platforms">
         <div class="platform">
@@ -268,11 +281,34 @@ footer .wrap { padding-block: 2rem; display: flex; justify-content: space-betwee
         </div>
         <div class="platform">
           <div class="top"><h3>macOS</h3><span class="pill later">En préparation</span></div>
-          <p>Une version pour Mac est en cours. Vous voulez savoir quand elle sera prête? <a href="../#contact">Écrivez-nous.</a></p>
+          <p>Une version pour Mac est en cours; elle sera vendue directement sur cette page. Vous voulez savoir quand elle sera prête? <a href="../#contact">Écrivez-nous.</a></p>
         </div>
         <div class="platform">
           <div class="top"><h3>Linux</h3><span class="pill later">En préparation</span></div>
-          <p>Une version pour Linux est en test. Vous voulez savoir quand elle sera prête? <a href="../#contact">Écrivez-nous.</a></p>
+          <p>Une version pour Linux est en test; elle sera vendue directement sur cette page. Vous voulez savoir quand elle sera prête? <a href="../#contact">Écrivez-nous.</a></p>
+        </div>
+      </div>
+      <div class="buy" id="buy">
+        <div>
+          <h3>Ou achetez-la directement chez nous</h3>
+          <p>Pour Mac et Linux, ou pour Windows sans passer par le Store. Vous payez une fois et le téléchargement est à vous.</p>
+          <ul>
+            <li>Pas d'abonnement.</li>
+            <li>Pas de clé de licence, pas d'activation, aucune vérification par Internet. ReKarver fonctionne entièrement hors ligne, et la copie que vous avez achetée continue de fonctionner.</li>
+            <li>Installez-la sur vos propres ordinateurs, autant que vous voulez.</li>
+            <li>Un seul achat couvre Windows maintenant, puis Linux et Mac dès que chacun sera prêt. Téléchargez-la de nouveau en tout temps avec le lien de votre reçu.</li>
+          </ul>
+          <p>ReKarver n'est pas verrouillée : tout repose sur la confiance. Si quelqu'un vous en a donné une copie et qu'elle vous a rendu vos photos, achetez-en une, s'il vous plaît. C'est ce qui fait vivre ReKarver.</p>
+        </div>
+        <div>
+          <!-- Prix : provisoire jusqu'à ce qu'Andy le fixe. Le garder identique au produit Lemon Squeezy et à rekarver/. -->
+          <p class="price" id="price">29&nbsp;$ <small>US, une seule fois</small></p>
+          <!-- Paiement Lemon Squeezy : une fois le produit créé, mettre dans href son lien de paiement
+               (https://<boutique>.lemonsqueezy.com/buy/<id>), changer le texte pour « Acheter ReKarver »
+               et retirer aria-disabled. Même chose dans rekarver/. -->
+          <div><a class="btn primary" id="buy-link" href="#buy" aria-disabled="true">Achat direct : bientôt</a></div>
+          <p class="fine">Le paiement est traité par Lemon Squeezy, notre revendeur, qui perçoit les taxes de vente et vous envoie par courriel votre reçu et le lien de téléchargement. Voir la <a href="../confidentialite/">politique de confidentialité</a>.</p>
+          <p class="fine">Le téléchargement pour Windows n'est pas encore signé : Windows peut afficher « Windows a protégé votre ordinateur » la première fois. Choisissez Informations complémentaires, puis Exécuter quand même.</p>
         </div>
       </div>
     </div>
