@@ -6,10 +6,10 @@ No build step: edit the HTML and push.
 
 ## Product pages
 
-Each app has its own page: `rekarver/`, `pecan/`, `mouse-toy/` and `phono/`, with French copies under
+Each app has its own page: `rekarver/`, `pecan/`, `cat-toy/` and `phono/`, with French copies under
 `fr/` at the same paths. They share `assets/product.css`. The home pages keep a short card for each app
-that links to its page. Mouse toy and Phono are placeholders: their names and details aren't final, so
-rename the folders (and update the links on both home pages) once they are.
+that links to its page. Names and branding for the apps still in development aren't final: if a name
+changes, rename its folders and update the links on both home pages.
 
 ## Fonts
 
