@@ -4,6 +4,13 @@ A static page (`index.html`, French in `fr/`) with the apps and a contact form, 
 policy at `privacy/` (French at `fr/confidentialite/`).
 No build step: edit the HTML and push.
 
+## Product pages
+
+Each app has its own page: `rekarver/`, `pecan/`, `mouse-toy/` and `phono/`, with French copies under
+`fr/` at the same paths. They share `assets/product.css`. The home pages keep a short card for each app
+that links to its page. Mouse toy and Phono are placeholders: their names and details aren't final, so
+rename the folders (and update the links on both home pages) once they are.
+
 ## Fonts
 
 Public Sans and IBM Plex are served from `assets/fonts/` (latin and latin-ext subsets, SIL OFL),
