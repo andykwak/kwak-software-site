@@ -111,6 +111,14 @@ section { padding-block: clamp(2.5rem, 6vw, 4rem); }
 .spec dd { margin: 0.2rem 0 0; font-family: var(--mono); font-size: 0.9rem; overflow-wrap: anywhere; }
 .spec dd.none { color: var(--red); font-weight: 500; }
 .store-note { font-size: 0.9rem; color: var(--muted); }
+.app-link { color: inherit; text-decoration: none; }
+.app-link:hover { color: var(--red); }
+.app-more { font-weight: 600; font-size: 0.95rem; }
+.apps-small { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr)); gap: 1.25rem; }
+.app-small { background: var(--sheet); border: 1px solid var(--line); border-radius: 10px; padding: 1.5rem; display: grid; gap: 0.7rem; align-content: start; min-width: 0; }
+.app-small p { color: var(--muted); }
+.app-icon-sm { width: 40px; height: 40px; display: block; }
+.app-small .app-more { color: inherit; }
 @media (max-width: 760px) {
   .app { grid-template-columns: minmax(0, 1fr); }
   .spec { border-left: 0; border-top: 1px solid var(--line); }
@@ -196,28 +204,61 @@ footer .wrap { padding-block: 2rem; display: flex; justify-content: space-betwee
     <div class="wrap">
       <div class="section-head">
         <span class="label">Apps</span>
-        <h2>First up</h2>
-        <p>Want to know when it's available? <a href="#contact">Send a note.</a></p>
+        <h2>What we're making</h2>
+        <p>Want to know when they're available? <a href="#contact">Send a note.</a></p>
       </div>
 
       <div class="apps">
         <article class="app" id="rekarver">
           <div class="app-main">
-            <div class="app-top"><h3>ReKarver</h3><span class="pill soon">Coming soon to the Microsoft Store</span></div>
+            <div class="app-top"><h3><a class="app-link" href="rekarver/">ReKarver</a></h3><span class="pill soon">Coming soon to the Microsoft Store</span></div>
             <p class="lede">Helps you get photos back from a memory card, USB stick or hard drive. It only reads from the drive and never writes to it.</p>
             <ul>
               <li>Looks for photos that were deleted or are on a card that won't open</li>
               <li>Lets you look through what it found and keep only what you want</li>
             </ul>
+            <p class="app-more"><a href="rekarver/">More about ReKarver</a> · <a href="rekarver/#docs">Docs</a></p>
           </div>
           <div class="spec">
             <dl>
-              <div><dt>Photo types</dt><dd>JPEG · PNG · HEIC · WebP · camera RAW and more</dd></div>
+              <div><dt>Photo types</dt><dd>JPEG · PNG · HEIC · WebP · AVIF · GIF · BMP · TIFF · camera RAW</dd></div>
               <div><dt>Runs on</dt><dd>Windows</dd></div>
               <div><dt>Account needed</dt><dd class="none">No</dd></div>
             </dl>
           </div>
         </article>
+
+        <article class="app" id="pecan">
+          <div class="app-main">
+            <div class="app-top"><h3><a class="app-link" href="pecan/">Pecan</a></h3><span class="pill dev">In development</span></div>
+            <p class="lede">A fast photo organizer for the photos and videos on your computer. Everything it does happens on your computer.</p>
+            <ul>
+              <li>Shows the photos and videos in the folders you choose on one timeline</li>
+              <li>Albums, favourites, duplicate finding, and fixes that don't touch the originals</li>
+              <li>Leaves your files where they are and doesn't rename them</li>
+            </ul>
+            <p class="app-more"><a href="pecan/">More about Pecan</a></p>
+          </div>
+          <div class="spec">
+            <dl>
+              <div><dt>Runs on</dt><dd>Windows</dd></div>
+              <div><dt>Account needed</dt><dd class="none">No</dd></div>
+            </dl>
+          </div>
+        </article>
+
+        <div class="apps-small">
+          <article class="app-small" id="purrsor">
+            <div class="app-top"><img class="app-icon-sm" src="assets/apps/purrsor-128.png" alt="" width="40" height="40"><h3><a class="app-link" href="purrsor/">Purrsor</a></h3><span class="pill dev">In development</span></div>
+            <p>Puts a cat toy on the end of your mouse pointer, so your cat has something to chase. Your mouse keeps working normally.</p>
+            <p class="app-more"><a href="purrsor/">More about Purrsor</a></p>
+          </article>
+          <article class="app-small" id="phono">
+            <div class="app-top"><h3><a class="app-link" href="phono/">Phono</a></h3><span class="pill dev">In development</span></div>
+            <p>Digitizes and plays your vinyl records, and lets you flip through your collection like a crate in a record store.</p>
+            <p class="app-more"><a href="phono/">More about Phono</a></p>
+          </article>
+        </div>
       </div>
     </div>
   </section>
@@ -258,6 +299,7 @@ footer .wrap { padding-block: 2rem; display: flex; justify-content: space-betwee
             <select id="topic" name="topic">
               <option>General question</option>
               <option>ReKarver</option>
+              <option>Pecan</option>
               <option>Contract work</option>
               <option>Bug report</option>
             </select>
