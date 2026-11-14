@@ -63,7 +63,7 @@ section { padding-block: clamp(2rem, 5vw, 3.5rem); }
 .overview { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 2.5rem; }
 .overview > div { min-width: 0; }
 .features { margin: 0; padding-left: 1.1rem; display: grid; gap: 0.5rem; color: var(--muted); }
-.spec { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 1.5rem; }
+.spec { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 1.5rem; align-self: start; }
 .spec dl { margin: 0; display: grid; gap: 0.9rem; }
 .spec dt { font: 500 0.72rem/1.2 var(--mono); text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
 .spec dd { margin: 0.2rem 0 0; font-family: var(--mono); font-size: 0.9rem; overflow-wrap: anywhere; }
@@ -79,3 +79,4 @@ section { padding-block: clamp(2rem, 5vw, 3.5rem); }
 .note { color: var(--muted); font-size: 0.95rem; max-width: 60ch; }
 footer .wrap { padding-block: 2rem; display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; color: var(--muted); font-size: 0.9rem; border-top: 1px solid var(--line); }
 @media (max-width: 760px) { .overview { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; } }
+.app-icon { width: 64px; height: 64px; display: block; }

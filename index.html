@@ -117,6 +117,7 @@ section { padding-block: clamp(2.5rem, 6vw, 4rem); }
 .apps-small { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr)); gap: 1.25rem; }
 .app-small { background: var(--sheet); border: 1px solid var(--line); border-radius: 10px; padding: 1.5rem; display: grid; gap: 0.7rem; align-content: start; min-width: 0; }
 .app-small p { color: var(--muted); }
+.app-icon-sm { width: 40px; height: 40px; display: block; }
 .app-small .app-more { color: inherit; }
 @media (max-width: 760px) {
   .app { grid-template-columns: minmax(0, 1fr); }
@@ -247,10 +248,10 @@ footer .wrap { padding-block: 2rem; display: flex; justify-content: space-betwee
         </article>
 
         <div class="apps-small">
-          <article class="app-small" id="cat-toy">
-            <div class="app-top"><h3><a class="app-link" href="cat-toy/">Cat Toy Cursor</a></h3><span class="pill dev">In development</span></div>
+          <article class="app-small" id="purrsor">
+            <div class="app-top"><img class="app-icon-sm" src="assets/apps/purrsor-128.png" alt="" width="40" height="40"><h3><a class="app-link" href="purrsor/">Purrsor</a></h3><span class="pill dev">In development</span></div>
             <p>Puts a cat toy on the end of your mouse pointer, so your cat has something to chase. Your mouse keeps working normally.</p>
-            <p class="app-more"><a href="cat-toy/">More about Cat Toy Cursor</a></p>
+            <p class="app-more"><a href="purrsor/">More about Purrsor</a></p>
           </article>
           <article class="app-small" id="phono">
             <div class="app-top"><h3><a class="app-link" href="phono/">Phono</a></h3><span class="pill dev">In development</span></div>

@@ -6,9 +6,9 @@ No build step: edit the HTML and push.
 
 ## Product pages
 
-Each app has its own page: `rekarver/`, `pecan/`, `cat-toy/` and `phono/`, with French copies under
+Each app has its own page: `rekarver/`, `pecan/`, `purrsor/` and `phono/`, with French copies under
 `fr/` at the same paths. They share `assets/product.css`. The home pages keep a short card for each app
-that links to its page. Names and branding for the apps still in development aren't final: if a name
+that links to its page. App icons, where an app has one, live in `assets/apps/`. Names and branding for the apps still in development aren't final: if a name
 changes, rename its folders and update the links on both home pages.
 
 ## Fonts
