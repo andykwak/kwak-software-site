@@ -68,15 +68,32 @@ section { padding-block: clamp(2rem, 5vw, 3.5rem); }
 .spec dt { font: 500 0.72rem/1.2 var(--mono); text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
 .spec dd { margin: 0.2rem 0 0; font-family: var(--mono); font-size: 0.9rem; overflow-wrap: anywhere; }
 .spec dd.none { color: var(--red); font-weight: 500; }
-.docs { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); gap: 1rem; }
-.doc, .placeholder {
-  background: var(--sheet); border: 1px dashed var(--line); border-radius: 10px; padding: 1.25rem;
-  display: grid; gap: 0.5rem; align-content: start;
-}
-.placeholder { max-width: 60ch; padding: 1.5rem; }
-.doc p, .placeholder p { color: var(--muted); }
-.doc p { font-size: 0.95rem; }
 .note { color: var(--muted); font-size: 0.95rem; max-width: 60ch; }
 footer .wrap { padding-block: 2rem; display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; color: var(--muted); font-size: 0.9rem; border-top: 1px solid var(--line); }
 @media (max-width: 760px) { .overview { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; } }
 .app-icon { width: 64px; height: 64px; display: block; }
+
+/* Banner at the top of each product page, after ReKarver's splash screen:
+   the app's icon colour with its darker strip across the bottom, holding the
+   app's line drawing on the left and the Kwak Software logo on the right. */
+.banner { background: var(--banner); color: #fff; }
+.banner-top { padding-block: clamp(1.5rem, 4vw, 2.5rem) clamp(1.75rem, 4.5vw, 2.75rem); display: grid; gap: 1.25rem; }
+.banner .crumb a { color: rgba(255, 255, 255, 0.8); }
+.banner .crumb a:hover { color: #fff; }
+.banner .title-row { gap: 1.25rem; flex-wrap: nowrap; }
+.title-text { display: flex; gap: 0.6rem 0.9rem; align-items: center; flex-wrap: wrap; min-width: 0; }
+.banner h1 { color: #fff; }
+.banner .app-icon { width: clamp(64px, 12vw, 96px); height: auto; aspect-ratio: 1; flex: none; box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.25); }
+.placeholder-icon {
+  display: grid; place-items: center; text-align: center; padding: 0.4rem; border: 2px dashed rgba(255, 255, 255, 0.7);
+  font: 500 0.7rem/1.2 var(--mono); text-transform: uppercase; letter-spacing: 0.06em; color: rgba(255, 255, 255, 0.85);
+}
+.banner .pill, .banner .pill.dev, .banner .pill.soon { background: rgba(255, 255, 255, 0.16); color: #fff; }
+.banner .lede { font-size: 1.15rem; color: rgba(255, 255, 255, 0.9); max-width: 58ch; }
+.banner .btn.primary { background: #fff; color: var(--banner); border-color: #fff; }
+.banner .btn.ghost { color: #fff; border-color: rgba(255, 255, 255, 0.8); }
+.banner a:focus-visible { outline-color: #fff; }
+.banner-strip { background: var(--strip); }
+.strip-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-block: 0.8rem; }
+.glyph { width: 36px; height: 36px; fill: none; stroke: #fff; stroke-width: 1.8; stroke-linejoin: round; stroke-linecap: round; }
+.strip-logo { display: block; height: 36px; width: auto; }
