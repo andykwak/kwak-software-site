@@ -4,6 +4,12 @@ A static page (`index.html`, French in `fr/`) with the apps and a contact form, 
 policy at `privacy/` (French at `fr/confidentialite/`).
 No build step: edit the HTML and push.
 
+Product pages: `rekarver/` and `pecan/` (French in `fr/rekarver/` and `fr/pecan/`), sharing
+`assets/product.css`, and the terms of sale and refunds at `terms/` (French at `fr/conditions/`).
+Buy and Download buttons are shown but disabled until Paddle checkout and the signed downloads are
+ready. Each product page has a commented-out Screenshots section to fill in with real screenshots.
+Keep each English page and its French page saying the same thing.
+
 ## Fonts
 
 Public Sans and IBM Plex are served from `assets/fonts/` (latin and latin-ext subsets, SIL OFL),
