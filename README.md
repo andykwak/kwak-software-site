@@ -33,3 +33,9 @@ link to that inbox; click it and every message after that is delivered.
 The privacy policy is at https://kwaksoftware.ca/privacy/ (French: /fr/confidentialite/); apps and the
 Microsoft Store's privacy policy field link there. Keep both languages and the home pages' short
 privacy summary in sync with what the apps actually do.
+
+## Licence signer
+
+`signer/` is a Cloudflare Worker, deployed separately, that Paddle calls after each sale: it signs
+the buyer's licence key and emails it. It isn't part of the website (`_config.yml` keeps it off
+GitHub Pages). Setup and running it: [signer/README.md](signer/README.md).

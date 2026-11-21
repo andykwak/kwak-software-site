@@ -1,0 +1,10 @@
+{
+  "name": "kwak-licence-signer",
+  "private": true,
+  "type": "module",
+  "description": "Signs and emails Kwak Software licence keys when Paddle reports a sale.",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "deploy": "npx wrangler@4 deploy"
+  }
+}
