@@ -1,0 +1,4 @@
+# GitHub Pages: the licence signer is a Cloudflare Worker, not part of the website.
+exclude:
+  - signer
+  - README.md
