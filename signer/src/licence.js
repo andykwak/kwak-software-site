@@ -9,7 +9,7 @@
 // WebCrypto gives that signature form directly, so no extra code is needed to convert it.
 
 export const PREFIX = "KWAK1.";
-export const APPS = ["pecan", "rekarver", "purrsor", "phono"];
+export const APPS = ["pecan", "rekarver", "purrsor", "phono", "mailmove"];
 
 /** Longest buyer name put into a key. Real names are far shorter; this keeps keys a sane length. */
 const MAX_NAME = 100;

@@ -1,7 +1,7 @@
 # Licence signer
 
 A small Cloudflare Worker that Paddle calls when a sale completes. It signs a licence key for each
-app bought (Pecan, ReKarver, Purrsor, Phono) and emails it to the buyer, as text and as a
+app bought (Pecan, ReKarver, Purrsor, Phono, MailMove) and emails it to the buyer, as text and as a
 `.kwaklicense` file. Nothing else.
 
 - **No data kept.** No database, no accounts. Paddle is the record of every sale, and a key can

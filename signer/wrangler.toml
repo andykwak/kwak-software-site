@@ -23,6 +23,7 @@ PRODUCTS = '''
   "pro_REPLACE_pecan":    { "app": "pecan",    "download": "https://kwaksoftware.ca/pecan/" },
   "pro_REPLACE_rekarver": { "app": "rekarver", "download": "https://kwaksoftware.ca/rekarver/" },
   "pro_REPLACE_purrsor":  { "app": "purrsor" },
-  "pro_REPLACE_phono":    { "app": "phono" }
+  "pro_REPLACE_phono":    { "app": "phono" },
+  "pro_REPLACE_mailmove": { "app": "mailmove" }
 }
 '''

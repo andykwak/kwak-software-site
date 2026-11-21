@@ -24,6 +24,11 @@ export const APP_TEXT = {
     en: "In Phono, open Settings > Licence.",
     fr: "Dans Phono, ouvrez Paramètres > Licence.",
   },
+  mailmove: {
+    title: "MailMove",
+    en: "In MailMove, choose Help > Enter licence key…, or Enter licence key on the start screen.",
+    fr: "Dans MailMove, choisissez Help > Enter licence key… (Aide > Entrer la clé de licence), ou Enter licence key sur l'écran de départ. MailMove est en anglais pour l'instant.",
+  },
 };
 
 /** French for buyers whose Paddle locale is French; English for everyone else. */

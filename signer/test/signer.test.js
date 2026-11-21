@@ -24,6 +24,8 @@ const OTHER_VECTORS = {
     "KWAK1.eyJ2IjoxLCJhcHAiOiJwdXJyc29yIiwibmFtZSI6IlRlc3QgQnV5ZXIiLCJvcmRlciI6InRlc3QtMDAwMSIsImlzc3VlZCI6IjIwMjYtMTEtMjEiLCJtYWpvciI6MX0",
   phono:
     "KWAK1.eyJ2IjoxLCJhcHAiOiJwaG9ubyIsIm5hbWUiOiJUZXN0IEJ1eWVyIiwib3JkZXIiOiJ0ZXN0LTAwMDEiLCJpc3N1ZWQiOiIyMDI2LTExLTIxIiwibWFqb3IiOjF9",
+  mailmove:
+    "KWAK1.eyJ2IjoxLCJhcHAiOiJtYWlsbW92ZSIsIm5hbWUiOiJUZXN0IEJ1eWVyIiwib3JkZXIiOiJ0ZXN0LTAwMDEiLCJpc3N1ZWQiOiIyMDI2LTExLTIxIiwibWFqb3IiOjF9",
 };
 const WEBHOOK_SECRET = "pdl_ntfset_test_secret";
 
@@ -320,7 +322,7 @@ test("email language follows the Paddle locale", () => {
 });
 
 test("every app has instructions in both languages", () => {
-  for (const app of ["pecan", "rekarver", "purrsor", "phono"]) {
+  for (const app of ["pecan", "rekarver", "purrsor", "phono", "mailmove"]) {
     for (const locale of ["en", "fr"]) {
       const email = composeEmail({ name: "A", order: "o", keys: [{ app, key: "KWAK1.x.y" }], locale, supportEmail: "s" });
       assert.ok(email.text.length > 100, `${app} ${locale}`);
