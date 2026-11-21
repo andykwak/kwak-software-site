@@ -1,0 +1,105 @@
+/* Product pages (ReKarver, Pecan, and the terms page): the home page's tokens and header, then a
+   hero with the app's icon, price and buttons, and spec-card sections below it. */
+:root {
+  --paper: #f6f5f3; --sheet: #ffffff; --ink: #1d1b1a; --muted: #625d58; --line: #dedbd6;
+  --red: #c4261a; --red-soft: #fbe9e7; --amber: #9a5b00; --amber-soft: #f7ecd9;
+  --display: "Public Sans", "Segoe UI", system-ui, sans-serif;
+  --body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #141312; --sheet: #1c1a19; --ink: #ecebe8; --muted: #a49e98; --line: #302c2a;
+    --red: #ff7a6e; --red-soft: #3a1c19; --amber: #e3ad5c; --amber-soft: #2e2516;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #141312; --sheet: #1c1a19; --ink: #ecebe8; --muted: #a49e98; --line: #302c2a;
+  --red: #ff7a6e; --red-soft: #3a1c19; --amber: #e3ad5c; --amber-soft: #2e2516;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 400 1rem/1.6 var(--body); }
+a { color: var(--red); }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+.wrap {
+  max-width: 68rem; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+h1, h2, h3 { font-family: var(--display); text-wrap: balance; margin: 0; }
+h2 { font-size: clamp(1.4rem, 2.6vw, 1.8rem); font-weight: 800; letter-spacing: -0.01em; }
+h3 { font-size: 1.1rem; font-weight: 600; }
+p { margin: 0; }
+.label { font: 500 0.75rem/1 var(--mono); text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+
+header { border-bottom: 1px solid var(--line); }
+header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-block: 1rem; flex-wrap: wrap; }
+.brand { display: flex; text-decoration: none; }
+.brand img { display: block; height: clamp(52px, 7vw, 72px); width: auto; }
+nav { display: flex; gap: 1.25rem; flex-wrap: wrap; }
+nav a { color: var(--muted); text-decoration: none; font-weight: 500; font-size: 1.05rem; }
+nav a:hover, nav a[aria-current] { color: var(--ink); }
+
+/* Hero: icon, name, one-line pitch, price line, buttons. */
+.hero .wrap { padding-block: clamp(2.5rem, 7vw, 5rem) clamp(2rem, 5vw, 3.5rem); display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 1.5rem 2rem; align-items: start; }
+.hero .icon { width: clamp(72px, 12vw, 128px); height: auto; border-radius: 0; display: block; }
+.hero .copy { display: grid; gap: 1rem; min-width: 0; }
+.hero h1 { font-size: clamp(2.2rem, 5.5vw, 3.6rem); font-weight: 800; line-height: 1.02; letter-spacing: -0.025em; }
+.hero .pitch { font-size: 1.2rem; max-width: 50ch; }
+.price { font-family: var(--mono); font-size: 0.95rem; color: var(--muted); }
+.price strong { color: var(--ink); font-weight: 500; font-size: 1.1rem; }
+.actions { display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center; }
+.btn {
+  display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.15rem; border-radius: 6px;
+  font: 600 1rem/1 var(--body); text-decoration: none; border: 1px solid var(--red); cursor: pointer;
+}
+.btn.primary { background: var(--red); color: var(--paper); }
+.btn.ghost { background: transparent; color: var(--red); }
+.btn[aria-disabled="true"] { opacity: 0.5; cursor: not-allowed; pointer-events: none; }
+.fine { font-size: 0.9rem; color: var(--muted); max-width: 60ch; }
+@media (max-width: 560px) { .hero .wrap { grid-template-columns: minmax(0, 1fr); } }
+
+section { padding-block: clamp(2rem, 5vw, 3.5rem); }
+.band { background: var(--sheet); border-block: 1px solid var(--line); }
+.section-head { display: grid; gap: 0.5rem; margin-bottom: 1.5rem; max-width: 60ch; }
+.section-head p { color: var(--muted); }
+
+/* What it does: a grid of short cards. */
+.features { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr)); gap: 1rem; }
+.feature { background: var(--sheet); border: 1px solid var(--line); border-radius: 10px; padding: 1.25rem 1.35rem; display: grid; gap: 0.4rem; align-content: start; }
+.band .feature { background: var(--paper); }
+.feature p { color: var(--muted); }
+
+/* Screenshots */
+.shots { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: 1.25rem; }
+.shots figure { margin: 0; display: grid; gap: 0.5rem; }
+.shots img { width: 100%; height: auto; border: 1px solid var(--line); border-radius: 8px; display: block; }
+.shots figcaption { font-size: 0.9rem; color: var(--muted); }
+
+/* Spec sheet: requirements and the facts about buying. */
+.specs { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr)); gap: 1.25rem; }
+.sheet { background: var(--sheet); border: 1px solid var(--line); border-radius: 10px; padding: 1.5rem; display: grid; gap: 1rem; align-content: start; min-width: 0; }
+.sheet dl { margin: 0; display: grid; gap: 0.9rem; }
+.sheet dt { font: 500 0.72rem/1.2 var(--mono); text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+.sheet dd { margin: 0.2rem 0 0; overflow-wrap: anywhere; }
+
+/* Questions */
+.faq { display: grid; gap: 0.75rem; max-width: 70ch; }
+.faq details { background: var(--sheet); border: 1px solid var(--line); border-radius: 8px; padding: 0.9rem 1.1rem; }
+.band .faq details { background: var(--paper); }
+.faq summary { cursor: pointer; font-weight: 600; }
+.faq details p { color: var(--muted); margin-top: 0.6rem; }
+
+/* Plain text pages (terms) */
+.text { padding-block: clamp(2.5rem, 6vw, 4rem); display: grid; gap: 1rem; }
+.text > * { max-width: 68ch; }
+.text h1 { font-size: clamp(2rem, 4.5vw, 3rem); font-weight: 800; line-height: 1.05; letter-spacing: -0.02em; }
+.text h2 { font-size: 1.35rem; font-weight: 600; margin-top: 1.25rem; }
+.text p, .text li { color: var(--muted); }
+.text ul { margin: 0; padding-left: 1.1rem; display: grid; gap: 0.4rem; }
+.text strong { color: var(--ink); font-weight: 600; }
+
+footer .wrap { padding-block: 2rem; display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; color: var(--muted); font-size: 0.9rem; border-top: 1px solid var(--line); }
+footer nav a { font-size: 0.9rem; }
