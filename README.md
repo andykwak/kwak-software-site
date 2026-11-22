@@ -6,7 +6,7 @@ No build step: edit the HTML and push.
 
 ## Product pages
 
-Each app has its own page: `rekarver/`, `rekarver-documents/`, `pecan/`, `purrsor/` and `phono/`, with French copies under
+Each app has its own page: `rekarver/`, `rekarver-documents/`, `pecan/`, `purrsor/` and `phonoout/`, with French copies under
 `fr/` at the same paths. They share `assets/product.css`. The home pages keep a short card for each app
 that links to its page. Each page opens with a banner in the app's icon colours, after ReKarver's splash screen; the colours, icon and line drawing for each app are in one place in the page generator's `LOOK` table (copied into each page). App icons live in `assets/apps/`. Names and branding for the apps still in development aren't final: if a name
 changes, rename its folders and update the links on both home pages.
