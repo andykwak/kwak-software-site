@@ -11,6 +11,15 @@ Each app has its own page: `rekarver/`, `rekarver-documents/`, `pecan/`, `purrso
 that links to its page. Each page opens with a banner in the app's icon colours, after ReKarver's splash screen; the colours, icon and line drawing for each app are in one place in the page generator's `LOOK` table (copied into each page). App icons live in `assets/apps/`. Names and branding for the apps still in development aren't final: if a name
 changes, rename its folders and update the links on both home pages.
 
+## Selling
+
+ReKarver and Pecan show their prices (CAD) and a "Buying" section with system requirements, but no Buy
+or Download buttons until Paddle checkout and the signed downloads work. The terms of sale and refunds
+are at `terms/` (French at `fr/conditions/`), and every footer links to them and to the privacy policy.
+The privacy policy's "Buying on this website" section names Paddle, Cloudflare (makes the licence key)
+and Resend (emails it); each app's privacy page links to it. Keep prices the same on the home cards,
+the product pages and the terms.
+
 ## Fonts
 
 Public Sans and IBM Plex are served from `assets/fonts/` (latin and latin-ext subsets, SIL OFL),

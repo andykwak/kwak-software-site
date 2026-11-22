@@ -97,3 +97,11 @@ footer .wrap { padding-block: 2rem; display: flex; justify-content: space-betwee
 .strip-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-block: 0.8rem; }
 .glyph { width: 36px; height: 36px; fill: none; stroke: #fff; stroke-width: 1.8; stroke-linejoin: round; stroke-linecap: round; }
 .strip-logo { display: block; height: 36px; width: auto; }
+
+/* Price under the banner's lede, and the buying section's list. */
+.banner .price-line { font-family: var(--mono); font-size: 0.95rem; color: rgba(255, 255, 255, 0.9); max-width: 58ch; }
+.banner .price-line strong { color: #fff; font-weight: 500; font-size: 1.05rem; }
+.buying { margin: 0; padding-left: 1.1rem; display: grid; gap: 0.5rem; color: var(--muted); }
+.buying strong { color: var(--ink); font-weight: 600; }
+.soon-note { margin-top: 1.25rem; padding: 0.8rem 1rem; border-radius: 8px; background: var(--amber-soft); color: var(--amber); font-weight: 500; max-width: 60ch; }
+footer a { color: var(--muted); }
