@@ -53,3 +53,5 @@ footer .wrap { padding-block: 2rem; display: flex; justify-content: space-betwee
 .apps li { display: flex; gap: 0.8rem; align-items: flex-start; }
 .apps img, .apps .no-icon { width: 40px; height: 40px; flex: none; display: block; margin-top: 0.15rem; }
 .apps .no-icon { border: 1.5px dashed var(--line); }
+
+footer a { color: var(--muted); }
