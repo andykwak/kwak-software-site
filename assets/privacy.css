@@ -1,0 +1,55 @@
+/* Privacy pages (the site-wide policy and each app's): same tokens and header as the home page, one readable column. */
+:root {
+  --paper: #f6f5f3; --sheet: #ffffff; --ink: #1d1b1a; --muted: #625d58; --line: #dedbd6; --red: #c4261a;
+  --display: "Public Sans", "Segoe UI", system-ui, sans-serif;
+  --body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #141312; --sheet: #1c1a19; --ink: #ecebe8; --muted: #a49e98; --line: #302c2a; --red: #ff7a6e;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #141312; --sheet: #1c1a19; --ink: #ecebe8; --muted: #a49e98; --line: #302c2a; --red: #ff7a6e;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 400 1rem/1.6 var(--body); }
+a { color: var(--red); }
+a:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+.wrap {
+  max-width: 68rem; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+h1, h2 { font-family: var(--display); text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(2rem, 4.5vw, 3rem); font-weight: 800; line-height: 1.05; letter-spacing: -0.02em; }
+h2 { font-size: 1.35rem; font-weight: 600; margin-top: 1.25rem; }
+p { margin: 0; }
+.label { font: 500 0.75rem/1 var(--mono); text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+header { border-bottom: 1px solid var(--line); }
+header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-block: 1rem; flex-wrap: wrap; }
+.brand { display: flex; text-decoration: none; }
+.brand img { display: block; height: clamp(52px, 7vw, 72px); width: auto; }
+nav { display: flex; gap: 1.25rem; flex-wrap: wrap; }
+nav a { color: var(--muted); text-decoration: none; font-weight: 500; font-size: 1.05rem; }
+nav a:hover { color: var(--ink); }
+.policy { padding-block: clamp(2.5rem, 6vw, 4rem); display: grid; gap: 1rem; }
+.policy > * { max-width: 68ch; }
+.policy p, .policy li { color: var(--muted); }
+.policy ul { margin: 0; padding-left: 1.1rem; display: grid; gap: 0.4rem; }
+.policy strong { color: var(--ink); font-weight: 600; }
+.summary { background: var(--sheet); border: 1px solid var(--line); border-radius: 10px; padding: 1.25rem 1.5rem; display: grid; gap: 0.6rem; }
+footer .wrap { padding-block: 2rem; display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; color: var(--muted); font-size: 0.9rem; border-top: 1px solid var(--line); }
+.app-head { display: flex; align-items: center; gap: 0.9rem; }
+.app-head img { width: 56px; height: 56px; display: block; flex: none; }
+.crumb { font-size: 0.95rem; }
+.crumb a { color: var(--muted); text-decoration: none; }
+.crumb a:hover { color: var(--ink); }
+.note { border-left: 3px solid var(--line); padding-left: 1rem; }
+.apps { list-style: none; padding: 0 !important; gap: 0.75rem !important; }
+.apps li { display: flex; gap: 0.8rem; align-items: flex-start; }
+.apps img, .apps .no-icon { width: 40px; height: 40px; flex: none; display: block; margin-top: 0.15rem; }
+.apps .no-icon { border: 1.5px dashed var(--line); }

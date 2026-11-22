@@ -37,6 +37,10 @@ link to that inbox; click it and every message after that is delivered.
    185.199.110.153 and 185.199.111.153, and a `CNAME` for `www` pointing to `<user>.github.io`.
 4. Once the certificate is issued, tick **Enforce HTTPS**.
 
-The privacy policy is at https://kwaksoftware.ca/privacy/ (French: /fr/confidentialite/); apps and the
-Microsoft Store's privacy policy field link there. Keep both languages and the home pages' short
-privacy summary in sync with what the apps actually do.
+The site-wide privacy policy is at https://kwaksoftware.ca/privacy/ (French: /fr/confidentialite/). It
+covers the website, contact, the Microsoft Store and your rights, and links to each app's own privacy
+page: `<app>/privacy/` (French: `fr/<app>/confidentialite/`), which says what that app does with
+information, from its code. All privacy pages share `assets/privacy.css`. ReKarver's app links to
+https://kwaksoftware.ca/privacy, so that URL must keep working; an app's Store listing can point at its
+own page. Keep both languages, the app pages and the home pages' short privacy summary in sync with what
+the apps actually do, and change the effective date when a page's substance changes.
