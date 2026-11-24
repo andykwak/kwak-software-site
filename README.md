@@ -16,7 +16,7 @@ changes, rename its folders and update the links on both home pages.
 ReKarver and Pecan show their prices (CAD) and a "Buying" section with system requirements, but no Buy
 or Download buttons until Paddle checkout and the signed downloads work. The terms of sale and refunds
 are at `terms/` (French at `fr/conditions/`), and every page's header and footer link to them and to the privacy policy.
-The terms name the seller's legal name (Andrew Jay Kwak, operating as Kwak Software), which Paddle's review asks for;
+The terms name the seller's legal name (Andrew Kwak, operating as Kwak Software), which Paddle's review asks for;
 keep it the same as the name on the Paddle account. Paddle only handles software, so the site doesn't offer contract work.
 The privacy policy's "Buying on this website" section names Paddle, Cloudflare (makes the licence key)
 and Resend (emails it); each app's privacy page links to it. Keep prices the same on the home cards,
