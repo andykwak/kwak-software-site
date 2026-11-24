@@ -15,7 +15,9 @@ changes, rename its folders and update the links on both home pages.
 
 ReKarver and Pecan show their prices (CAD) and a "Buying" section with system requirements, but no Buy
 or Download buttons until Paddle checkout and the signed downloads work. The terms of sale and refunds
-are at `terms/` (French at `fr/conditions/`), and every footer links to them and to the privacy policy.
+are at `terms/` (French at `fr/conditions/`), and every page's header and footer link to them and to the privacy policy.
+The terms name the seller's legal name (Andrew Jay Kwak, operating as Kwak Software), which Paddle's review asks for;
+keep it the same as the name on the Paddle account. Paddle only handles software, so the site doesn't offer contract work.
 The privacy policy's "Buying on this website" section names Paddle, Cloudflare (makes the licence key)
 and Resend (emails it); each app's privacy page links to it. Keep prices the same on the home cards,
 the product pages and the terms.
@@ -44,7 +46,10 @@ link to that inbox; click it and every message after that is delivered.
 2. Settings > Pages > Custom domain: enter it, e.g. `kwaksoftware.com`. GitHub adds a `CNAME` file.
 3. At the registrar's DNS, add `A` records for `@` pointing to 185.199.108.153, 185.199.109.153,
    185.199.110.153 and 185.199.111.153, and a `CNAME` for `www` pointing to `<user>.github.io`.
-4. Once the certificate is issued, tick **Enforce HTTPS**.
+4. Once the certificate is issued, tick **Enforce HTTPS**. Paddle's review requires HTTPS, and without this tick plain
+   `http://` addresses load without redirecting.
+
+`sitemap.xml` lists every page and `robots.txt` points to it. Add a page's URL to the sitemap when you add a page.
 
 The site-wide privacy policy is at https://kwaksoftware.ca/privacy/ (French: /fr/confidentialite/). It
 covers the website, contact, the Microsoft Store and your rights, and links to each app's own privacy
