@@ -58,3 +58,9 @@ information, from its code. All privacy pages share `assets/privacy.css`. ReKarv
 https://kwaksoftware.ca/privacy, so that URL must keep working; an app's Store listing can point at its
 own page. Keep both languages, the app pages and the home pages' short privacy summary in sync with what
 the apps actually do, and change the effective date when a page's substance changes.
+
+## Licence signer
+
+`signer/` is a Cloudflare Worker, deployed separately, that Paddle calls after each sale: it signs
+the buyer's licence key and emails it. It isn't part of the website (`_config.yml` keeps it off
+GitHub Pages). Setup and running it: [signer/README.md](signer/README.md).

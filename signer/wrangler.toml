@@ -1,0 +1,28 @@
+# The Kwak Software licence signer. Deploy from this folder with `npx wrangler@4 deploy`.
+# Secrets are set with `npx wrangler@4 secret put <NAME>` and never go in this file (see README.md).
+name = "kwak-licence-signer"
+main = "src/index.js"
+compatibility_date = "2026-11-01"
+workers_dev = true
+
+# Errors (order ids only, never names or emails) show in the dashboard under Workers > Logs.
+[observability]
+enabled = true
+
+[vars]
+# "sandbox" while testing with Paddle's sandbox; "live" for real sales.
+PADDLE_ENV = "sandbox"
+EMAIL_FROM = "Kwak Software <licences@kwaksoftware.ca>"
+SUPPORT_EMAIL = "support@kwaksoftware.ca"
+# The public half of the key pair from `kwak-license new-keys`, the same one built into the apps.
+# The signer checks every key with it before emailing. Made by Andy on 2026-11-24.
+KWAK_PUBLIC_KEY = "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEaf/APNB1xL3CSVNpBJUpiVMx2id9w1ntEqr2mcmoOBZbHKmd5RlGVgxsFHKhLB0KUatQn/ATI9fm0H+UbL2aAw=="
+# Paddle product ids (Catalog > Products) to apps. "major" defaults to 1; "download" is optional.
+PRODUCTS = '''
+{
+  "pro_01m8843a2bcd4s23ahqrxk9j70": { "app": "pecan",    "download": "https://kwaksoftware.ca/pecan/" },
+  "pro_01m88442r21dcqkytdxy6sftss": { "app": "rekarver", "download": "https://kwaksoftware.ca/rekarver/" }
+}
+'''
+# Those are Paddle SANDBOX product ids. Live ones replace them at go-live; Purrsor, Phono and MailMove
+# are added when they have Paddle products.
