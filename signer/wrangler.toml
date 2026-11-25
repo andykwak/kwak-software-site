@@ -15,8 +15,8 @@ PADDLE_ENV = "sandbox"
 EMAIL_FROM = "Kwak Software <licences@kwaksoftware.ca>"
 SUPPORT_EMAIL = "support@kwaksoftware.ca"
 # The public half of the key pair from `kwak-license new-keys`, the same one built into the apps.
-# The signer checks every key with it before emailing. This is the published TEST key: replace it.
-KWAK_PUBLIC_KEY = "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEk8mM/WsMR66P4M+XLmMwtDwdDXmbcnmZL07XvdsbTV9HEZyFGHg5ZgXckpU8U/gC5Gj+hw8rmopAGrZFHTv3aQ=="
+# The signer checks every key with it before emailing. Made by Andy on 2026-11-24.
+KWAK_PUBLIC_KEY = "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEaf/APNB1xL3CSVNpBJUpiVMx2id9w1ntEqr2mcmoOBZbHKmd5RlGVgxsFHKhLB0KUatQn/ATI9fm0H+UbL2aAw=="
 # Paddle product ids (Catalog > Products) to apps. "major" defaults to 1; "download" is optional.
 PRODUCTS = '''
 {
