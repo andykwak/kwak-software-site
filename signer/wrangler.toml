@@ -20,10 +20,9 @@ KWAK_PUBLIC_KEY = "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEk8mM/WsMR66P4M+XLmMwtDwdD
 # Paddle product ids (Catalog > Products) to apps. "major" defaults to 1; "download" is optional.
 PRODUCTS = '''
 {
-  "pro_REPLACE_pecan":    { "app": "pecan",    "download": "https://kwaksoftware.ca/pecan/" },
-  "pro_REPLACE_rekarver": { "app": "rekarver", "download": "https://kwaksoftware.ca/rekarver/" },
-  "pro_REPLACE_purrsor":  { "app": "purrsor" },
-  "pro_REPLACE_phono":    { "app": "phono" },
-  "pro_REPLACE_mailmove": { "app": "mailmove" }
+  "pro_01m8843a2bcd4s23ahqrxk9j70": { "app": "pecan",    "download": "https://kwaksoftware.ca/pecan/" },
+  "pro_01m88442r21dcqkytdxy6sftss": { "app": "rekarver", "download": "https://kwaksoftware.ca/rekarver/" }
 }
 '''
+# Those are Paddle SANDBOX product ids. Live ones replace them at go-live; Purrsor, Phono and MailMove
+# are added when they have Paddle products.
