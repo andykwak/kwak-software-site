@@ -14,53 +14,7 @@
 <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
 <meta name="theme-color" content="#d52b1e">
 <link rel="stylesheet" href="../assets/fonts/fonts.css">
-<style>
-/* Same tokens and header as the home page; one readable column for the policy. */
-:root {
-  --paper: #f6f5f3; --sheet: #ffffff; --ink: #1d1b1a; --muted: #625d58; --line: #dedbd6; --red: #c4261a;
-  --display: "Public Sans", "Segoe UI", system-ui, sans-serif;
-  --body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
-  --mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --paper: #141312; --sheet: #1c1a19; --ink: #ecebe8; --muted: #a49e98; --line: #302c2a; --red: #ff7a6e;
-    color-scheme: dark;
-  }
-}
-:root[data-theme="dark"] {
-  --paper: #141312; --sheet: #1c1a19; --ink: #ecebe8; --muted: #a49e98; --line: #302c2a; --red: #ff7a6e;
-  color-scheme: dark;
-}
-* { box-sizing: border-box; }
-body { margin: 0; background: var(--paper); color: var(--ink); font: 400 1rem/1.6 var(--body); }
-a { color: var(--red); }
-a:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
-.wrap {
-  max-width: 68rem; margin: 0 auto;
-  padding-left: max(16px, env(safe-area-inset-left, 0px));
-  padding-right: max(16px, env(safe-area-inset-right, 0px));
-}
-h1, h2 { font-family: var(--display); text-wrap: balance; margin: 0; }
-h1 { font-size: clamp(2rem, 4.5vw, 3rem); font-weight: 800; line-height: 1.05; letter-spacing: -0.02em; }
-h2 { font-size: 1.35rem; font-weight: 600; margin-top: 1.25rem; }
-p { margin: 0; }
-.label { font: 500 0.75rem/1 var(--mono); text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
-header { border-bottom: 1px solid var(--line); }
-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-block: 1rem; flex-wrap: wrap; }
-.brand { display: flex; text-decoration: none; }
-.brand img { display: block; height: clamp(52px, 7vw, 72px); width: auto; }
-nav { display: flex; gap: 1.25rem; flex-wrap: wrap; }
-nav a { color: var(--muted); text-decoration: none; font-weight: 500; font-size: 1.05rem; }
-nav a:hover { color: var(--ink); }
-.policy { padding-block: clamp(2.5rem, 6vw, 4rem); display: grid; gap: 1rem; }
-.policy > * { max-width: 68ch; }
-.policy p, .policy li { color: var(--muted); }
-.policy ul { margin: 0; padding-left: 1.1rem; display: grid; gap: 0.4rem; }
-.policy strong { color: var(--ink); font-weight: 600; }
-.summary { background: var(--sheet); border: 1px solid var(--line); border-radius: 10px; padding: 1.25rem 1.5rem; display: grid; gap: 0.6rem; }
-footer .wrap { padding-block: 2rem; display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; color: var(--muted); font-size: 0.9rem; border-top: 1px solid var(--line); }
-</style>
+<link rel="stylesheet" href="../assets/privacy.css">
 </head>
 <body>
 
@@ -76,6 +30,8 @@ footer .wrap { padding-block: 2rem; display: flex; justify-content: space-betwee
       <a href="../#apps">Apps</a>
       <a href="../#about">About</a>
       <a href="../#contact">Contact</a>
+      <a href="../privacy/">Privacy</a>
+      <a href="../terms/">Terms</a>
       <a href="../fr/confidentialite/" lang="fr" hreflang="fr">Français</a>
     </nav>
   </div>
@@ -84,42 +40,39 @@ footer .wrap { padding-block: 2rem; display: flex; justify-content: space-betwee
 <main class="wrap policy">
   <span class="label">Privacy</span>
   <h1>Privacy policy</h1>
-  <p>Effective November 1, 2026.</p>
+  <p>Effective November 22, 2026.</p>
 
   <div class="summary">
     <p><strong>The short version.</strong></p>
     <ul>
       <li>Kwak Software apps run on your computer. They don't collect analytics, don't show ads and don't need an account.</li>
-      <li>ReKarver and Pecan don't connect to the internet at all. Your drives and photos never leave your computer.</li>
-      <li>We only get personal information when you choose to send it to us, for example by email or the contact form, and we use it only to reply to you.</li>
+      <li>Your photos, documents, recordings and other files stay on your computer. Most of our apps never connect to the internet; PhonoOut goes online only when you look a record up.</li>
+      <li>We only get personal information when you choose to send it to us, for example by email or the contact form, or when you buy an app here. We use it only to reply to you, deliver what you bought and keep the records the law requires.</li>
+      <li>We never send marketing email.</li>
       <li>We don't sell or rent personal information, and we don't share it for advertising.</li>
     </ul>
   </div>
 
   <h2>Who we are</h2>
-  <p>Kwak Software is a sole proprietorship based in Ottawa, Ontario, Canada. In this policy, "we" and "us" mean Kwak Software. This policy covers our apps and this website (kwaksoftware.ca). The owner of Kwak Software is responsible for how personal information is handled and can be reached at <a href="mailto:support@kwaksoftware.ca">support@kwaksoftware.ca</a>.</p>
+  <p>Kwak Software is a sole proprietorship based in Ottawa, Ontario, Canada. In this policy, "we" and "us" mean Kwak Software. This policy covers our apps and this website (kwaksoftware.ca); each app's own page, listed below, gives the details for that app. The owner of Kwak Software is responsible for how personal information is handled and can be reached at <a href="mailto:support@kwaksoftware.ca">support@kwaksoftware.ca</a>.</p>
 
-  <h2>ReKarver</h2>
-  <p>ReKarver recovers photos from drives, memory cards and disk images. Everything it does happens on your computer.</p>
-  <ul>
-    <li><strong>No network access.</strong> ReKarver makes no internet connections. It has no analytics, crash reporting or update checks of its own, and no account.</li>
-    <li><strong>Your drives and photos.</strong> ReKarver reads the drive or image you choose. It doesn't change it. Photos it recovers are saved only to the folder you choose.</li>
-    <li><strong>Settings.</strong> ReKarver keeps your language choice in a small settings file in your Windows user folder. It stays on your computer.</li>
-    <li><strong>Diagnostics.</strong> If you click "Copy diagnostics" in Settings, ReKarver copies details about your computer and what the app did (not the names of the photos it found) to your clipboard. Nothing is sent. If you paste it into an email to us, we use it only to help with your problem.</li>
+  <h2>Our apps</h2>
+  <p>Each app has its own privacy page that says exactly what it does with your information. In short:</p>
+  <ul class="apps">
+    <li><img src="../assets/apps/rekarver-128.png" alt="" width="40" height="40"><span><strong><a href="../rekarver/privacy/">ReKarver privacy</a></strong><br>Recovers photos and videos from drives and memory cards. Makes no internet connections.</span></li>
+    <li><img src="../assets/apps/rekarver-documents-128.png" alt="" width="40" height="40"><span><strong><a href="../rekarver-documents/privacy/">ReKarver Documents privacy</a></strong><br>Recovers deleted documents. Makes no internet connections.</span></li>
+    <li><img src="../assets/apps/pecan-banner.png" alt="" width="40" height="40"><span><strong><a href="../pecan/privacy/">Pecan privacy</a></strong><br>Organizes the photos and videos on your computer. Makes no internet connections of its own.</span></li>
+    <li><img src="../assets/apps/purrsor-128.png" alt="" width="40" height="40"><span><strong><a href="../purrsor/privacy/">Purrsor privacy</a></strong><br>Puts a cat toy on your mouse pointer. Makes no internet connections.</span></li>
+    <li><span class="no-icon"></span><span><strong><a href="../phonoout/privacy/">PhonoOut privacy</a></strong><br>Rips and plays your vinyl records. Goes online only when you look a record up on MusicBrainz.</span></li>
   </ul>
 
-  <h2>Pecan</h2>
-  <p>Pecan organizes the photos and videos on your computer. Everything it does happens on your computer.</p>
-  <ul>
-    <li><strong>No network access.</strong> Pecan makes no internet connections. It has no analytics, crash reporting or update checks of its own, and no account. It only opens our website or your email app if you click those links in About or Settings.</li>
-    <li><strong>Your library.</strong> Pecan reads the folders you choose. It keeps its library (file names and locations, dates, camera details, location data stored in your photos, albums, favourites and edits) and thumbnails in a folder in your Windows user folder. They stay on your computer, and deleting that folder removes them.</li>
-    <li><strong>Your files.</strong> Pecan doesn't move or rename your photos. It changes a file only when you ask it to: if you turn on saving rotations into JPEG files, or move duplicates to the Recycle Bin.</li>
-    <li><strong>Exports.</strong> When you export photos, you can choose to remove location and personal details from the copies.</li>
-    <li><strong>Crash reports.</strong> If Pecan crashes, it writes a plain-text report to a logs folder on your computer. It is never sent anywhere. If you choose to email it to us, we use it only to fix the problem.</li>
-  </ul>
+  <h2 id="buying">Buying on this website</h2>
+  <p>ReKarver and Pecan bought on this website are sold by Paddle.com, our reseller and merchant of record. Paddle collects your name, email address, country and postal code (for sales tax), and your payment details, under the <a href="https://www.paddle.com/legal/privacy">Paddle Privacy Notice</a>. We never see your card or PayPal details. Paddle gives us your name, email address, country, what you bought and the order number. We use them to make and send your licence key, to answer support and refund requests, and to keep the business records the law requires (in Canada, six years).</p>
+  <p>To make and deliver your key, your name, email address and licence key also pass through Cloudflare, which runs the small program that creates the key (<a href="https://www.cloudflare.com/privacypolicy/">Cloudflare Privacy Policy</a>), and Resend, which sends the email with your key (<a href="https://resend.com/legal/privacy-policy">Resend Privacy Policy</a>). They use it only to do that for us.</p>
+  <p>Your licence key contains your name and order number. The apps check it on your computer and never send it anywhere. We never send marketing email.</p>
 
-  <h2>Buying and installing through the Microsoft Store</h2>
-  <p>Our apps are sold through the Microsoft Store. Microsoft handles the purchase, payment and download under the <a href="https://privacy.microsoft.com/privacystatement">Microsoft Privacy Statement</a>. We never see your payment details. Microsoft gives us reports such as sales counts by country, ratings and reviews you post publicly in the Store, and, depending on your Windows diagnostic settings, crash reports. We use these only to support and improve our apps.</p>
+  <h2>Buying and installing through the Microsoft Store (not available yet)</h2>
+  <p>If you buy one of our apps through the Microsoft Store, Microsoft handles the purchase, payment and download under the <a href="https://privacy.microsoft.com/privacystatement">Microsoft Privacy Statement</a>. We never see your payment details. Microsoft gives us reports such as sales counts by country, ratings and reviews you post publicly in the Store, and, depending on your Windows diagnostic settings, crash reports. We use these only to support and improve our apps.</p>
 
   <h2>This website</h2>
   <ul>
@@ -135,7 +88,7 @@ footer .wrap { padding-block: 2rem; display: flex; justify-content: space-betwee
   <p>We don't sell, rent or trade personal information. We share it only with the service providers named above, which handle it on our behalf (for example to deliver email), or when the law requires it.</p>
 
   <h2>Where information is stored</h2>
-  <p>Some of the service providers named in this policy, including Microsoft, GitHub and FormSubmit, may store or process information outside Canada, for example in the United States. Information held there may be accessed by courts, law enforcement and national security authorities of that country under its laws.</p>
+  <p>Some of the service providers named in this policy, including Paddle, Cloudflare, Resend, Microsoft, GitHub and FormSubmit, may store or process information outside Canada, for example in the United States. Information held there may be accessed by courts, law enforcement and national security authorities of that country under its laws.</p>
 
   <h2>Your rights</h2>
   <p>You can ask to see the personal information we hold about you, to correct it, or to have it deleted, and you can withdraw your consent at any time. Write to <a href="mailto:support@kwaksoftware.ca">support@kwaksoftware.ca</a> and we'll reply within 30 days. If you're not satisfied with our answer, you can contact the <a href="https://www.priv.gc.ca/">Office of the Privacy Commissioner of Canada</a>.</p>
@@ -153,7 +106,7 @@ footer .wrap { padding-block: 2rem; display: flex; justify-content: space-betwee
 <footer>
   <div class="wrap">
     <span>© <span id="year">2026</span> Kwak Software</span>
-    <span>Made in Ottawa</span>
+    <span><a href="../privacy/">Privacy</a> · <a href="../terms/">Terms and refunds</a> · Made in Ottawa</span>
   </div>
 </footer>
 
