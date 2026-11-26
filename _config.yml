@@ -1,3 +1,5 @@
-# GitHub Pages: the licence signer is a Cloudflare Worker, not part of the website.
+# GitHub Pages: the licence signer is a Cloudflare Worker, not part of the website,
+# and docs/ holds notes for running the business, not pages for visitors.
 exclude:
   - signer
+  - docs
