@@ -64,3 +64,9 @@ the apps actually do, and change the effective date when a page's substance chan
 `signer/` is a Cloudflare Worker, deployed separately, that Paddle calls after each sale: it signs
 the buyer's licence key and emails it. It isn't part of the website (`_config.yml` keeps it off
 GitHub Pages). Setup and running it: [signer/README.md](signer/README.md).
+
+## Running it
+
+[docs/OPERATIONS.md](docs/OPERATIONS.md) covers every service behind direct sales (Paddle, the signer,
+Resend, Azure signing, the Store, DNS, releases and runners): what lives where, secret names (never
+values), and how to redeploy, rotate keys and block leaked keys. `_config.yml` keeps `docs/` off the website.
