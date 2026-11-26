@@ -40,6 +40,7 @@ so any key can be made again from Paddle's order.
 | GitHub Pages | Hosts the website | Repo `andykwak/kwak-software-site`, branch `main` | Free |
 | GitHub Actions | Builds, tests, signed releases | Self-hosted runners on Andy's PC | Free |
 | FormSubmit | Website contact form → support@ | | Free |
+| Zoho Mail | The support@kwaksoftware.ca inbox, where buyers' replies and the contact form land | | Zoho's plan |
 
 ## Secrets inventory (names only)
 
@@ -49,7 +50,7 @@ so any key can be made again from Paddle's order.
 | `PADDLE_WEBHOOK_SECRET` | Worker (checks Paddle-Signature) | Worker secret; password manager | Paddle → Developer tools → Notifications → the destination | Never, until rotated |
 | `PADDLE_API_KEY` | Worker (looks up the buyer) | Worker secret; password manager | Paddle → Developer tools → Authentication. Permission **Customers: Read** only | Sandbox key `kwak-licence-signer-2` expires **2027-02-23** |
 | `RESEND_API_KEY` | Worker (sends email) | Worker secret; password manager | Resend → API Keys. **Sending access**, domain kwaksoftware.ca only | Never, until rotated |
-| Account logins (Paddle live, Paddle sandbox, Cloudflare, Resend, Azure, Partner Center, CanSpace, GitHub) | Andy | Password manager, ideally with two-factor sign-in on each | | |
+| Account logins (Paddle live, Paddle sandbox, Cloudflare, Resend, Azure, Partner Center, CanSpace, Zoho Mail, GitHub) | Andy | Password manager, ideally with two-factor sign-in on each | | |
 
 Sandbox and live Paddle each have their own webhook secret and API key. Only one set is in the
 Worker at a time.
@@ -242,7 +243,9 @@ US$20 a month. The Worker uses the order id as the idempotency key, so Paddle's 
 | `@` A × 4 | 185.199.108.153, .109.153, .110.153, .111.153 | GitHub Pages |
 | `www` CNAME | `andykwak.github.io` | GitHub Pages |
 | Resend records (above) | Resend | Licence email |
-| MX and mail records for support@ | Andy's mail provider | Support inbox |
+| MX, SPF (TXT) and DKIM records from Zoho | Zoho Mail | support@ and other kwaksoftware.ca mailboxes |
+
+SPF is a single TXT record on `@`. Resend sends from the `send` subdomain with its own records, so it doesn't need adding to Zoho's SPF. If another service ever sends as @kwaksoftware.ca, it goes into that one record; a second SPF record breaks both.
 
 Keep the domain on auto-renew: if it lapses, the website, the support address and the licence
 emails all stop at once.
@@ -361,6 +364,5 @@ start. Partner Center account validated 2026-11-25, publisher display name **Kwa
       pricing, age ratings, screenshots.
 - [ ] **Purrsor, Phono, MailMove:** licensing PRs (cat-toy #7/#8, Phono #42/#43, konverter #10)
       to merge, production public key in each, Paddle products, `PRODUCTS` entries.
-- [ ] Fill in the support@kwaksoftware.ca mail provider in the DNS table above.
 - [ ] Consider a required reviewer on each repository's `release` environment, so a signed
       release can't run without Andy's click.
